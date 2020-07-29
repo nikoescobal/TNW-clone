@@ -5,7 +5,7 @@
 }
 
 body {
-  /* background-color: antiquewhite; */
+  margin: 0 auto;
 }
 
 /* Generic Classes */
@@ -56,11 +56,9 @@ body {
 
 /* Nav Section */
 
-/* nav ul li a {
-  text-decoration: none;
-  list-style-type: none;
-  color: white;
-} */
+.tablet-tnw-logo {
+  display: none;
+}
 
 #first-nav {
   font-size: 13px;
@@ -105,30 +103,82 @@ body {
   border-bottom: 3px solid gray;
 }
 
-/* [a^="#"]:hover {
-  color: yellow;
-} */
-
-/* Main Section */
+/* Main section Images */
+.main-grid-container {
+  display: grid;
+  grid-template-areas:
+    "main-image-1  main-image-1   main-image-2"
+    "main-image-1  main-image-1  main-image-3";
+  grid-gap: 0.5rem;
+}
 
 .main-image-1 {
-  background-image: url("assets/main-image-1.png");
+  grid-area: main-image-1;
+  background-image: url("assets/main-image-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 70em;
+  opacity: 1;
+  height: 32.5rem;
+  padding: 25rem 1rem 6rem 2rem;
+  font-size: 1rem;
+  color: white;
 }
 
 .main-image-2 {
-  background-image: url("assets/main-image-2.png");
+  grid-area: main-image-2;
+  background-image: url("assets/main-image-2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 70em;
+  height: 15rem;
+  color: white;
+  padding: 10rem 1rem 6rem 2rem;
 }
-
 .main-image-3 {
-  background-image: url("assets/main-image-3.png");
+  grid-area: main-image-3;
+  background-image: url("assets/main-image-3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 70em;
+  height: 15rem;
+  color: white;
+  padding: 10rem 1rem 6rem 2rem;
 }
 
-.main-grid-container {
-  grid-template-columns: 2fr 1fr 1fr;
+/* Mobile */
+
+@media (max-width: 760px) {
+  #first-nav,
+  #second-nav {
+    display: none;
+  }
+
+  .main-grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Tablet */
+
+@media (max-width: 1024px) {
+  .tablet-tnw-logo {
+    display: block;
+    background-color: teal;
+    width: 106px;
+    height: 80px;
+    padding: 0 20px;
+    background: linear-gradient(to bottom right, #c09, #f42 85%);
+  }
+  #first-nav {
+    position: absolute;
+    top: 0;
+    left: 106px;
+  }
+  #second-nav {
+    position: absolute;
+    top: 30px;
+    left: 106px;
+  }
 }
