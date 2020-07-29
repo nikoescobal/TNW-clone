@@ -10,6 +10,18 @@ body {
 
 /* Generic Classes */
 
+.uppercase {
+  text-transform: uppercase;
+}
+
+.smaller {
+  font-size: 13px;
+}
+
+.smaller {
+  font-size: 14px;
+}
+
 .gray {
   background-color: gray;
 }
@@ -60,9 +72,17 @@ body {
   display: none;
 }
 
+#first-nav a {
+  font-family: "ARS Maquette";
+}
+
+#first-nav a:hover {
+  color: rgb(255, 255, 255);
+}
+
 #first-nav {
-  font-size: 13px;
-  background-color: black;
+  font-family: "ARS Maquette";
+  background-color: #555555;
   list-style: none;
   text-decoration: none;
   padding: 10px 0;
