@@ -81,13 +81,17 @@ body {
   color: rgb(255, 255, 255);
 }
 
+#first-nav ul:first-child li:first-child a {
+  color: white;
+}
+
 #first-nav {
   height: 32px;
   font-family: "ARS Maquette";
   background-color: #131313;
   list-style: none;
   text-decoration: none;
-  padding: 10px 0;
+  padding: 10px 20px 10px;
 }
 
 /* #first-nav ul li:nth-last-child(n + 2):hover {
@@ -108,6 +112,10 @@ body {
   list-style-type: none;
 }
 
+#second-nav a:first-child {
+  margin-left: 30px;
+}
+
 #second-nav a {
   margin-left: 20px;
   text-decoration: none;
@@ -121,10 +129,8 @@ body {
 }
 
 #second-nav {
-  height: 48px;
   font-family: "Shentox", serif;
   background-color: white;
-  padding: 10px 0;
   /* border-right: 5px solid mistyrose; */
 }
 
@@ -135,14 +141,12 @@ body {
   margin-bottom: -0.5rem;
 } */
 
-.fa-search {
-  color: #aaa;
-  /* padding: 0.8rem;
-  border-bottom: solid 0.1px #aaa;
-  margin-bottom: -0.5rem; */
+.search-icon {
+  border-left: 1px solid #eee;
+  padding: 13px;
 }
 
-.fa-search:hover {
+.search-icon:hover {
   color: gray;
 }
 
@@ -220,17 +224,22 @@ body {
     background-color: teal;
     width: 106px;
     height: 80px;
+    left: 0;
+    top: 0;
+    z-index: 100;
     padding: 0 20px;
     background: linear-gradient(to bottom right, #c09, #f42 85%);
   }
   #first-nav {
     position: relative;
     top: 0;
-    left: 106px;
+    padding-left: 112px;
+    /* left: 106px; */
   }
   #second-nav {
-    position: relative;
+    padding-left: 102px;
+    /* position: relative; */
     /* top: 30px; */
-    left: 106px;
+    /* left: 106px; */
   }
 }
