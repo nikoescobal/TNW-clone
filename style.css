@@ -18,7 +18,7 @@ body {
   font-size: 13px;
 }
 
-.smaller {
+.small {
   font-size: 14px;
 }
 
@@ -72,8 +72,9 @@ body {
   display: none;
 }
 
-#first-nav a {
+#first-nav ul li a {
   font-family: "ARS Maquette";
+  color: #ffffff99;
 }
 
 #first-nav a:hover {
@@ -81,8 +82,9 @@ body {
 }
 
 #first-nav {
+  height: 32px;
   font-family: "ARS Maquette";
-  background-color: #555555;
+  background-color: #131313;
   list-style: none;
   text-decoration: none;
   padding: 10px 0;
@@ -99,7 +101,7 @@ body {
 #first-nav a {
   text-decoration: none;
   color: white;
-  margin-left: 30px;
+  margin-left: 12px;
 }
 
 #second-nav li {
@@ -107,20 +109,41 @@ body {
 }
 
 #second-nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #aaa;
+}
+
+#second-nav a:hover {
   margin-left: 30px;
   text-decoration: none;
-  color: gray;
+  color: #131313;
 }
 
 #second-nav {
-  border: 3px solid gray;
-  font-size: 14px;
+  height: 48px;
+  font-family: "Shentox", serif;
   background-color: white;
   padding: 10px 0;
+  /* border-right: 5px solid mistyrose; */
 }
 
+/* #second-nav i {
+  border-bottom: 2px solid mistyrose;
+  padding: 0.8rem;
+  border-bottom: solid 3px #aaa;
+  margin-bottom: -0.5rem;
+} */
+
 .fa-search {
-  border-bottom: 3px solid gray;
+  color: #aaa;
+  /* padding: 0.8rem;
+  border-bottom: solid 0.1px #aaa;
+  margin-bottom: -0.5rem; */
+}
+
+.fa-search:hover {
+  color: gray;
 }
 
 /* Main section Images */
@@ -133,6 +156,7 @@ body {
 }
 
 .main-image-1 {
+  position: relative;
   grid-area: main-image-1;
   background-image: url("assets/main-image-1.jpg");
   background-position: center;
@@ -143,6 +167,13 @@ body {
   padding: 25rem 1rem 6rem 2rem;
   font-size: 1rem;
   color: white;
+}
+
+#desktop-white-logo {
+  position: absolute;
+  top: 0;
+  margin-top: 16px;
+  filter: invert(1);
 }
 
 .main-image-2 {
@@ -184,6 +215,7 @@ body {
 
 @media (max-width: 1024px) {
   .tablet-tnw-logo {
+    position: absolute;
     display: block;
     background-color: teal;
     width: 106px;
@@ -192,13 +224,13 @@ body {
     background: linear-gradient(to bottom right, #c09, #f42 85%);
   }
   #first-nav {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 106px;
   }
   #second-nav {
-    position: absolute;
-    top: 30px;
+    position: relative;
+    /* top: 30px; */
     left: 106px;
   }
 }
