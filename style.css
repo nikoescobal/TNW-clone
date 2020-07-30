@@ -68,6 +68,10 @@ body {
 
 /* Nav Section */
 
+.hamburger-icon-mobile {
+  display: none;
+}
+
 .search-icon-mobile {
   display: none;
 }
@@ -117,17 +121,17 @@ body {
 }
 
 #second-nav a:first-child {
-  margin-left: 30px;
+  margin-left: 27.5px;
 }
 
 #second-nav a {
-  margin-left: 20px;
+  margin-left: 10px;
   text-decoration: none;
   color: #aaa;
 }
 
 #second-nav a:hover {
-  margin-left: 30px;
+  margin-left: 10px;
   text-decoration: none;
   color: #131313;
 }
@@ -165,6 +169,7 @@ body {
 
 .main-image-1 {
   position: relative;
+  border: 8px solid #eee;
   grid-area: main-image-1;
   background-image: url("assets/main-image-1.jpg");
   background-position: center;
@@ -172,7 +177,7 @@ body {
   background-size: cover;
   opacity: 1;
   height: 32.5rem;
-  padding: 25rem 1rem 6rem 2rem;
+  padding: 27.5rem 1rem 6rem 2rem;
   font-size: 1rem;
   color: white;
 }
@@ -180,11 +185,14 @@ body {
 #desktop-white-logo {
   position: absolute;
   top: 0;
-  margin-top: 16px;
+  left: 0;
+  margin-left: -26px;
+  margin-top: -10px;
   filter: invert(1);
 }
 
 .main-image-2 {
+  border: 8px solid #eee;
   grid-area: main-image-2;
   background-image: url("assets/main-image-2.jpg");
   background-position: center;
@@ -195,6 +203,7 @@ body {
   padding: 10rem 1rem 6rem 2rem;
 }
 .main-image-3 {
+  border: 8px solid #eee;
   grid-area: main-image-3;
   background-image: url("assets/main-image-3.jpg");
   background-position: center;
@@ -216,10 +225,26 @@ body {
     width: 106px;
   }
 
+  .hamburger-icon-mobile {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 16px;
+    margin-top: 16px;
+    /* padding: 13px; */
+    /* margin-left: 100px; */
+  }
+
   .search-icon-mobile {
     display: block;
-
-    padding-left: 300px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    padding: 16px;
+    margin-right: 50px;
   }
   #first-nav,
   #second-nav {
@@ -229,7 +254,7 @@ body {
   .main-grid-container {
     display: flex;
     flex-direction: column;
-    margin-top: 29px;
+    margin-top: 48px;
   }
 
   #desktop-white-logo {
