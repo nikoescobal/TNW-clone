@@ -68,6 +68,10 @@ body {
 
 /* Nav Section */
 
+.search-icon-mobile {
+  display: none;
+}
+
 .tablet-tnw-logo {
   display: none;
 }
@@ -204,6 +208,19 @@ body {
 /* Mobile */
 
 @media (max-width: 760px) {
+  .tablet-tnw-logo {
+    display: block;
+    /* padding-bottom: 80px; */
+    max-height: 48px;
+    padding: 16px 20px;
+    width: 106px;
+  }
+
+  .search-icon-mobile {
+    display: block;
+
+    padding-left: 300px;
+  }
   #first-nav,
   #second-nav {
     display: none;
@@ -212,6 +229,11 @@ body {
   .main-grid-container {
     display: flex;
     flex-direction: column;
+    margin-top: 29px;
+  }
+
+  #desktop-white-logo {
+    display: none;
   }
 }
 
@@ -241,5 +263,8 @@ body {
     /* position: relative; */
     /* top: 30px; */
     /* left: 106px; */
+  }
+  #desktop-white-logo {
+    display: none;
   }
 }
