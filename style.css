@@ -42,7 +42,7 @@ header a {
   display: flex;
 }
 
-.flex-direction-column {
+.flex-column {
   flex-direction: column;
 }
 
@@ -66,8 +66,16 @@ header a {
   justify-content: space-around;
 }
 
+.flex-end {
+  justify-content: flex-end;
+}
+
 .grid {
   display: grid;
+}
+
+.bigger {
+  font-size: 56px;
 }
 
 /* Nav Section */
@@ -165,15 +173,17 @@ header a {
   background-size: cover;
   min-height: 545px;
   color: white;
-  padding-top: 335px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.main-image-1 h1 {
+  font-family: "Avalon";
+  font-size: 45px;
+  padding-bottom: 20px;
 }
 
 #desktop-white-logo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-left: -26px;
-  margin-top: -10px;
   filter: invert(1);
 }
 
@@ -187,14 +197,23 @@ header a {
 .main-image-2 {
   border: 8px solid #eee;
   grid-area: main-2;
-  background-image: url("assets/main-image-2.jpg");
+  /* background-image: url("assets/main-image-2.jpg"); */
+  background-color: sienna;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  padding-top: 102px;
+  /* padding-top: 102px; */
   /* padding: 2rem 1rem 1rem; */
+  align-items: flex-end;
 }
+
+.main-image-2 h2 {
+  font-size: 28px;
+  font-family: "Avalon";
+  ali
+}
+
 .main-image-3 {
   border: 8px solid #eee;
   grid-area: main-3;
