@@ -14,6 +14,18 @@ header a {
 
 /* Generic Classes */
 
+
+
+
+/* .share-icon {
+  border: solid 3px red;
+  color: black;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  right: 0;
+} */
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -127,7 +139,7 @@ header a {
 }
 
 #second-nav a:first-child {
-  margin-left: 29px;
+  margin-left: 28.5px;
   color: #aaa;
 }
 
@@ -222,7 +234,7 @@ header a {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  padding-top: 102px;
+  /* padding-top: 102px; */
   /* padding: 2rem 1rem 1rem; */
 }
 
@@ -233,6 +245,13 @@ header a {
   height: 4000px;
   border: 4px solid salmon;
   margin: 0 auto;
+}
+
+.card-0 {
+background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/1-21-796x417.jpg");
+background-size: cover;
+max-width: 883px;
+max-height: 478px;
 }
 
 .card-1 {
@@ -266,7 +285,7 @@ header a {
     left: 0;
     top: 0;
     z-index: 100;
-    padding: 0 20px;
+    /* padding: 0 20px; */
     background: linear-gradient(to bottom right, #c09, #f42 85%);
   }
   #first-nav {
