@@ -175,8 +175,8 @@ header a {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 1;
-  height: 32.5rem;
-  padding: 27.5rem 1rem 6rem 2rem;
+  /* height: 32.5rem; */
+  /* padding: 27.5rem 1rem 6rem 2rem; */
   font-size: 1rem;
   color: white;
 }
@@ -188,6 +188,13 @@ header a {
   margin-left: -26px;
   margin-top: -10px;
   filter: invert(1);
+}
+
+.desktop-date {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  margin-right: 30px;
 }
 
 .main-image-2 {
@@ -249,9 +256,27 @@ header a {
   }
 
   .main-grid-container {
-    display: flex;
-    flex-direction: column;
+    /* display: grid; */
+    grid-template-areas:
+      "main-image-1"
+      "main-image-2"
+      "main-image-3";
+    /* grid-template-columns: 1fr;
+    grid-auto-flow: column; */
     margin-top: 48px;
+  }
+
+  .main-image-1 {
+    grid-area: main-image-1;
+    min-height: 200px;
+  }
+
+  .main-image-2 {
+    grid-area: main-image-2;
+  }
+
+  .main-image-3 {
+    grid-area: main-image-3;
   }
 
   #desktop-white-logo {
