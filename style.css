@@ -8,6 +8,10 @@ body {
   margin: 0 auto;
 }
 
+header a {
+  text-decoration: none;
+}
+
 /* Generic Classes */
 
 .uppercase {
@@ -98,7 +102,6 @@ body {
   font-family: "ARS Maquette";
   background-color: #131313;
   list-style: none;
-  text-decoration: none;
   padding: 10px 20px 10px;
 }
 
@@ -111,7 +114,6 @@ body {
 }
 
 #first-nav a {
-  text-decoration: none;
   color: white;
   margin-left: 12px;
 }
@@ -121,18 +123,15 @@ body {
 }
 
 #second-nav a:first-child {
-  margin-left: 27.5px;
-}
-
-#second-nav a {
-  margin-left: 10px;
-  text-decoration: none;
+  margin-left: 32px;
   color: #aaa;
 }
 
+#second-nav a {
+  /* margin-left: 5px; */
+}
+
 #second-nav a:hover {
-  margin-left: 10px;
-  text-decoration: none;
   color: #131313;
 }
 
@@ -232,8 +231,6 @@ body {
     right: 0;
     margin-right: 16px;
     margin-top: 16px;
-    /* padding: 13px; */
-    /* margin-left: 100px; */
   }
 
   .search-icon-mobile {
@@ -268,7 +265,6 @@ body {
   .tablet-tnw-logo {
     position: absolute;
     display: block;
-    background-color: teal;
     width: 106px;
     height: 80px;
     left: 0;
@@ -284,11 +280,12 @@ body {
     /* left: 106px; */
   }
   #second-nav {
-    padding-left: 102px;
+    padding-left: 95px;
     /* position: relative; */
     /* top: 30px; */
     /* left: 106px; */
   }
+
   #desktop-white-logo {
     display: none;
   }
