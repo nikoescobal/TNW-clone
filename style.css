@@ -150,24 +150,22 @@ header a {
 .main-grid-container {
   display: grid;
   grid-template-areas:
-    "main-image-1  main-image-1   main-image-2"
-    "main-image-1  main-image-1  main-image-3";
+    "main-1  main-1   main-2"
+    "main-1  main-1  main-3";
   grid-gap: 0.5rem;
 }
 
 .main-image-1 {
   position: relative;
   border: 8px solid #eee;
-  grid-area: main-image-1;
+  grid-area: main-1;
   background-image: url("assets/main-image-1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 1;
-  /* height: 32.5rem; */
-  /* padding: 27.5rem 1rem 6rem 2rem; */
-  font-size: 1rem;
+  min-height: 545px;
   color: white;
+  padding-top: 335px;
 }
 
 #desktop-white-logo {
@@ -188,25 +186,25 @@ header a {
 
 .main-image-2 {
   border: 8px solid #eee;
-  grid-area: main-image-2;
+  grid-area: main-2;
   background-image: url("assets/main-image-2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 15rem;
   color: white;
-  padding: 10rem 1rem 6rem 2rem;
+  padding-top: 102px;
+  /* padding: 2rem 1rem 1rem; */
 }
 .main-image-3 {
   border: 8px solid #eee;
-  grid-area: main-image-3;
+  grid-area: main-3;
   background-image: url("assets/main-image-3.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 15rem;
   color: white;
-  padding: 10rem 1rem 6rem 2rem;
+  padding-top: 102px;
+  /* padding: 2rem 1rem 1rem; */
 }
 
 /* Latest news section */
@@ -215,6 +213,59 @@ header a {
   width: 294px;
   height: 251px;
   padding: 12px;
+}
+
+/* Tablet */
+
+@media (max-width: 1024px) {
+  .tablet-tnw-logo {
+    position: absolute;
+    display: block;
+    width: 106px;
+    height: 80px;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    padding: 0 20px;
+    background: linear-gradient(to bottom right, #c09, #f42 85%);
+  }
+  #first-nav {
+    position: relative;
+    top: 0;
+    padding-left: 112px;
+    /* left: 106px; */
+  }
+  #second-nav {
+    padding-left: 95px;
+    /* position: relative; */
+    /* top: 30px; */
+    /* left: 106px; */
+  }
+
+  #desktop-white-logo {
+    display: none;
+  }
+
+  .main-grid-container {
+    display: grid;
+    grid-template-areas:
+      "main-image-1  main-image-1   main-image-2 "
+      "main-image-1  main-image-1   main-image-3 ";
+    grid-gap: 0.5rem;
+  }
+
+  .main-image-1 {
+    min-height: 290px;
+    grid-area: main-image-1;
+  }
+  .main-image-2 {
+    min-height: 136px;
+    grid-area: main-image-2;
+  }
+  .main-image-3 {
+    min-height: 136px;
+    grid-area: main-image-3;
+  }
 }
 
 /* Mobile */
@@ -261,63 +312,32 @@ header a {
     display: none;
   }
 
+  #desktop-white-logo {
+    display: none;
+  }
   .main-grid-container {
-    /* display: grid; */
+    display: grid;
     grid-template-areas:
-      "main-image-1"
-      "main-image-2"
-      "main-image-3";
-    /* grid-template-columns: 1fr;
-    grid-auto-flow: column; */
-    margin-top: 48px;
+      "main-1"
+      "main-2"
+      "main-3";
+    grid-gap: 0.5rem;
   }
 
   .main-image-1 {
-    grid-area: main-image-1;
-    min-height: 200px;
+    grid-area: main-1;
+    min-height: 210px;
+    margin-top: 48px;
+    padding-top: 62px;
   }
-
   .main-image-2 {
-    grid-area: main-image-2;
+    grid-area: main-2;
+    min-height: 210px;
+    padding-top: 62px;
   }
-
   .main-image-3 {
-    grid-area: main-image-3;
-  }
-
-  #desktop-white-logo {
-    display: none;
-  }
-}
-
-/* Tablet */
-
-@media (max-width: 1024px) {
-  .tablet-tnw-logo {
-    position: absolute;
-    display: block;
-    width: 106px;
-    height: 80px;
-    left: 0;
-    top: 0;
-    z-index: 100;
-    padding: 0 20px;
-    background: linear-gradient(to bottom right, #c09, #f42 85%);
-  }
-  #first-nav {
-    position: relative;
-    top: 0;
-    padding-left: 112px;
-    /* left: 106px; */
-  }
-  #second-nav {
-    padding-left: 95px;
-    /* position: relative; */
-    /* top: 30px; */
-    /* left: 106px; */
-  }
-
-  #desktop-white-logo {
-    display: none;
+    grid-area: main-3;
+    min-height: 210px;
+    padding-top: 62px;
   }
 }
