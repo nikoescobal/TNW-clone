@@ -14,14 +14,9 @@ header a {
 
 /* Generic Classes */
 
-/* .share-icon {
-  border: solid 3px red;
-  color: black;
-  z-index: 100;
-  position: absolute;
-  top: 0;
-  right: 0;
-} */
+.special-arrow {
+  color: #ff4422;
+}
 
 .uppercase {
   text-transform: uppercase;
@@ -160,8 +155,10 @@ header a {
 /* Desktop */
 
 /* Main section Images */
+
 .main-grid-container {
   border: 8px solid #eee;
+  border-bottom: none;
   display: grid;
   grid-template-areas:
     "main-1  main-1   main-2"
@@ -171,7 +168,6 @@ header a {
 
 .main-image-1 {
   position: relative;
-  /* border: 8px solid #eee; */
   grid-area: main-1;
   background-image: url("assets/main-image-1.jpg");
   background-position: center;
@@ -181,6 +177,7 @@ header a {
   color: white;
   padding-bottom: 20px;
   padding-left: 20px;
+  cursor: pointer;
 }
 
 .main-image-1 h1 {
@@ -203,15 +200,14 @@ header a {
 }
 
 .main-image-2 {
-  /* border: 8px solid #eee; */
   grid-area: main-2;
   background-image: url("assets/main-image-2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  /* align-items: flex-end; */
   padding: 0 10px 20px 10px;
+  cursor: pointer;
 }
 
 .main-image-2 h2 {
@@ -221,7 +217,6 @@ header a {
 }
 
 .main-image-3 {
-  /* border: 8px solid #eee; */
   grid-area: main-3;
   background-image: url("assets/main-image-3.jpg");
   background-position: center;
@@ -229,6 +224,7 @@ header a {
   background-size: cover;
   color: white;
   padding: 0 10px 20px 10px;
+  cursor: pointer;
 }
 
 .main-image-3 h2 {
@@ -238,6 +234,12 @@ header a {
 }
 
 /* Main section */
+
+.main-image-1 p,
+.main-image-2 p,
+.main-image-3 p {
+  color: hsla(0, 0%, 100%, 0.6);
+}
 
 #clock--dark {
   /* filter: invert(1); */
@@ -271,13 +273,16 @@ header a {
 }
 
 .card-1 {
-  width: 95%;
-  height: 218px;
+  width: 100%;
   padding: 12px;
 }
 
 .latest-news h2 {
-  margin: 100px 0 10px 14px;
+  margin: 90px 0 10px 28px;
+}
+
+.latest-news h2 a:hover .special-arrow {
+  color: black;
 }
 
 .latest-news h2 a {
@@ -290,12 +295,8 @@ header a {
 .latest-news-container {
   grid-template-columns: repeat(4, 1fr);
   grid-row-gap: 46px;
-  /* grid-column-gap: 2px; */
-  /* width: 1225px; */
-  width: 95%;
-  /* height: 480px; */
-  /* height: 100vh; */
-  border: 3px solid salmon;
+  width: 97%;
+  height: 50%;
   margin: 0 auto;
 }
 
@@ -383,7 +384,7 @@ header a {
   }
 
   .card-1 {
-    width: 95%;
+    width: 100%;
     height: 218px;
     padding: 12px;
   }
@@ -444,7 +445,7 @@ header a {
       "main-1"
       "main-2"
       "main-3";
-    /* grid-gap: 0.5rem; */
+    cursor: pointer;
   }
 
   .image-1-mobile {
