@@ -14,9 +14,6 @@ header a {
 
 /* Generic Classes */
 
-
-
-
 /* .share-icon {
   border: solid 3px red;
   color: black;
@@ -143,10 +140,6 @@ header a {
   color: #aaa;
 }
 
-#second-nav a {
-  /* margin-left: 5px; */
-}
-
 #second-nav a:hover {
   color: #131313;
 }
@@ -179,7 +172,8 @@ header a {
   position: relative;
   border: 8px solid #eee;
   grid-area: main-1;
-  background-image: url("assets/main-image-1.jpg");
+  /* background-image: url("assets/main-image-1.jpg"); */
+  background-color: sienna;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -215,27 +209,32 @@ header a {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  /* padding-top: 102px; */
-  /* padding: 2rem 1rem 1rem; */
   align-items: flex-end;
+  padding: 0 10px 20px 10px;
 }
 
 .main-image-2 h2 {
   font-size: 28px;
   font-family: "Avalon";
-  ali
+  padding-bottom: 10px;
 }
 
 .main-image-3 {
   border: 8px solid #eee;
   grid-area: main-3;
-  background-image: url("assets/main-image-3.jpg");
+  /* background-image: url("assets/main-image-3.jpg"); */
+  background-color: sienna;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  /* padding-top: 102px; */
-  /* padding: 2rem 1rem 1rem; */
+  padding: 0 10px 20px 10px;
+}
+
+.main-image-3 h2 {
+  font-size: 28px;
+  font-family: "Avalon";
+  padding-bottom: 10px;
 }
 
 /* Main section */
@@ -248,10 +247,10 @@ header a {
 }
 
 .card-0 {
-background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/1-21-796x417.jpg");
-background-size: cover;
-max-width: 883px;
-max-height: 478px;
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/1-21-796x417.jpg");
+  background-size: cover;
+  max-width: 883px;
+  max-height: 478px;
 }
 
 .card-1 {
@@ -314,13 +313,23 @@ max-height: 478px;
   }
 
   .main-image-1 {
-    min-height: 290px;
+    min-height: 466px;
     grid-area: main-image-1;
+  }
+
+  .main-image-1 h1 {
+    font-size: 40px;
   }
   .main-image-2 {
     min-height: 136px;
     grid-area: main-image-2;
   }
+
+  .main-image-2 h2,
+  .main-image-3 h2 {
+    font-size: 20px;
+  }
+
   .main-image-3 {
     min-height: 136px;
     grid-area: main-image-3;
@@ -371,7 +380,8 @@ max-height: 478px;
     display: none;
   }
 
-  #desktop-white-logo {
+  #desktop-white-logo,
+  .desktop-date {
     display: none;
   }
   .main-grid-container {
@@ -380,23 +390,39 @@ max-height: 478px;
       "main-1"
       "main-2"
       "main-3";
-    grid-gap: 0.5rem;
+    /* grid-gap: 0.5rem; */
   }
 
-  .main-image-1 {
+  .image-1-mobile {
     grid-area: main-1;
     min-height: 210px;
     margin-top: 48px;
     padding-top: 62px;
+    padding-left: 10px;
   }
-  .main-image-2 {
+
+  .image-1-mobile h1 {
+    font-size: 20px;
+  }
+
+  .image-2-mobile {
     grid-area: main-2;
     min-height: 210px;
+    padding-left: 10px;
     padding-top: 62px;
   }
-  .main-image-3 {
+
+  .image-2-mobile h2 {
+    font-size: 20px;
+  }
+  .image-3-mobile {
     grid-area: main-3;
     min-height: 210px;
     padding-top: 62px;
+    padding-left: 10px;
+  }
+
+  .image-3-mobile h2 {
+    font-size: 20px;
   }
 }
