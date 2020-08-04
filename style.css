@@ -329,7 +329,7 @@ header a {
   z-index: 1;
 }
 
-.card-2-top h3 {
+/* .card-2-top h3 {
   color: white;
   font-family: "Avalon";
   font-size: 18px;
@@ -340,47 +340,71 @@ header a {
   top: 0;
   margin-left: 55px;
   text-align: center;
-}
+} */
 
-/* .masterd-background {
+.masterd-background {
   width: 100%;
   height: 40px;
   background-color: #f42;
   position: relative;
-  top: 0;
+  /* top: 0; */
   padding-left: 90px;
-} */
+}
 
-.card-2-top h4 {
-  font-size: 18px;
-  font-family: "Avalon";
+.undisclosed-amount {
   width: 100%;
   height: 40px;
   background-color: rgba(255, 68, 34, 0.08);
   position: relative;
+  /* top: 0; */
+  padding-left: 90px;
+}
+
+.card-2-top h4 {
+  font-size: 18px;
+  font-family: "Avalon";
+  /* width: 100%;
+  height: 40px;
+  background-color: rgba(255, 68, 34, 0.08);
+  position: relative;
   top: 0;
-  /* padding-left: 55px; */
+  padding-left: 55px; */
 }
 
 .card-2-top h5 {
   font-size: 12px;
   font-family: "Shentox";
-  width: 100%;
+  /* width: 100%;
   height: 40px;
   background-color: rgba(255, 68, 34, 0.08);
   position: relative;
   top: 0;
-  padding-left: 100px;
+  padding-left: 100px; */
+}
+
+.card-2-middle {
+  margin: 10px 10px;
+  width: 100%;
+  height: 80px;
+  background-color: #fefaf8;
 }
 
 .card-2-middle:first-child {
   font-size: 13px;
   font-family: "ARS Maquette";
+  padding-top: 10px;
 }
 
 .card-2-middle:last-child {
   font-size: 12px;
   font-family: "ARS Maquette";
+  padding-top: 10px;
+}
+
+.card-2-bottom {
+  background-color: #fefaf8;
+  border-top: 1px solid rgba(255, 68, 34, 0.25);
+  padding-top: 10px;
 }
 
 /* Tablet */
