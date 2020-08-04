@@ -328,25 +328,11 @@ header a {
   z-index: 1;
 }
 
-/* .card-2-top h3 {
-  color: white;
-  font-family: "Avalon";
-  font-size: 18px;
-  width: 100%;
-  height: 40px;
-  background-color: #f42;
-  position: relative;
-  top: 0;
-  margin-left: 55px;
-  text-align: center;
-} */
-
 .masterd-background {
   width: 100%;
   height: 40px;
   background-color: #f42;
   position: relative;
-  /* top: 0; */
   padding-left: 90px;
   padding-top: 10px;
 }
@@ -356,7 +342,6 @@ header a {
   height: 60px;
   background-color: rgba(255, 68, 34, 0.08);
   position: relative;
-  /* top: 0; */
   padding-left: 90px;
   padding-top: 10px;
 }
@@ -364,27 +349,14 @@ header a {
 .card-2-top h4 {
   font-size: 18px;
   font-family: "Avalon";
-  /* width: 100%;
-  height: 40px;
-  background-color: rgba(255, 68, 34, 0.08);
-  position: relative;
-  top: 0;
-  padding-left: 55px; */
 }
 
 .card-2-top h5 {
   font-size: 12px;
   font-family: "Shentox";
-  /* width: 100%;
-  height: 40px;
-  background-color: rgba(255, 68, 34, 0.08);
-  position: relative;
-  top: 0;
-  padding-left: 100px; */
 }
 
 .card-2-middle {
-  /* margin: 10px 10px; */
   width: 100%;
   padding: 18px;
   height: 80px;
@@ -484,6 +456,26 @@ header a {
     height: 218px;
     padding: 12px;
   }
+
+  .card-2-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+
+  .card-2:last-child {
+    display: none;
+  }
+
+  .latest-funding-tablet {
+    display: flex;
+    flex-direction: column;
+  }
+  .latest-funding-tablet div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
 }
 
 /* Mobile */
@@ -567,7 +559,6 @@ header a {
     padding-left: 10px;
     padding-top: 62px;
     display: flex;
-    /* align-items: flex-start; */
   }
 
   .image-2-mobile h2 {
@@ -616,5 +607,25 @@ header a {
   .card-1-mobile-text {
     display: flex;
     flex-direction: column;
+  }
+
+  .card-2-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+
+  .card-2:last-child {
+    display: none;
+  }
+
+  .latest-funding-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .latest-funding-mobile div {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
