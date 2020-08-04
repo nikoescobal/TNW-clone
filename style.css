@@ -311,7 +311,6 @@ header a {
 }
 
 .card-2 {
-  border: 2px solid blueviolet;
   min-width: 268px;
   width: 100%;
   height: 263px;
@@ -349,15 +348,17 @@ header a {
   position: relative;
   /* top: 0; */
   padding-left: 90px;
+  padding-top: 10px;
 }
 
 .undisclosed-amount {
   width: 100%;
-  height: 40px;
+  height: 60px;
   background-color: rgba(255, 68, 34, 0.08);
   position: relative;
   /* top: 0; */
   padding-left: 90px;
+  padding-top: 10px;
 }
 
 .card-2-top h4 {
@@ -383,8 +384,9 @@ header a {
 }
 
 .card-2-middle {
-  margin: 10px 10px;
+  /* margin: 10px 10px; */
   width: 100%;
+  padding: 18px;
   height: 80px;
   background-color: #fefaf8;
 }
@@ -405,6 +407,8 @@ header a {
   background-color: #fefaf8;
   border-top: 1px solid rgba(255, 68, 34, 0.25);
   padding-top: 10px;
+  padding-left: 10px;
+  height: 80px;
 }
 
 /* Tablet */
