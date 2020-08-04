@@ -14,6 +14,10 @@ header a {
 
 /* Generic Classes */
 
+.gray-text {
+  color: #ffffff99;
+}
+
 .special-arrow {
   color: #ff4422;
 }
@@ -56,6 +60,10 @@ header a {
 
 .align-items-center {
   align-items: center;
+}
+
+.align-items-baseline {
+  align-items: baseline;
 }
 
 .align-items-flex-end {
@@ -413,14 +421,36 @@ header a {
 .card-3 {
   width: 368px;
   height: 611px;
-  border: solid 3px mediumturquoise;
+  margin-bottom: 90px;
+  margin-left: 30px;
+}
+
+.card-3 p ~ first-child,
+.card-3 h3,
+.card-3-text p {
+  color: white;
+}
+
+.card-3 h2 {
+  color: #f42;
+}
+
+.card-3-image {
+  background: transparent
+    url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png)
+    no-repeat;
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: 100% 100%;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: transparent;
 }
 
 .card-3-text {
   margin-top: 16px;
   padding: 12px;
-  border: 2px solid springgreen;
-  /* width: 368px; */
   height: 274px;
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/1-21-796x417.jpg");
   background-position: top;
@@ -440,7 +470,71 @@ header a {
 }
 
 .card-3-bottom div p {
+  margin-left: 10px;
+  font-family: "Shentox", serif;
+  font-size: 13px;
+}
+
+.card-3-bottom div h4 {
+  font-family: "ARS Maquette", serif;
+  font-size: 14px;
   padding-left: 10px;
+  padding-top: 8px;
+}
+
+.card-3 a {
+  list-style: none;
+  list-style-position: inside;
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+.card-3 li {
+  border-bottom: 1px solid #eee;
+  padding: 6px 0;
+}
+
+.card-3 li::before {
+  content: "\2022";
+  color: #f42;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-top: 6px;
+}
+
+.grid-container-2 {
+  grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
+  width: 97%;
+}
+
+.latest-deals {
+  margin: 40px auto;
+}
+
+.latest-deals h2 a {
+  font-family: "Avalon", serif;
+  font-size: 28px;
+  margin-left: 30px;
+  text-decoration: none;
+  color: #f42;
+}
+
+.latest-deals p {
+  margin-right: 30px;
+  font-family: "ARS Maquette", serif;
+  font-size: 16px;
+  color: #f42;
+}
+
+.card-4 {
+  width: 270px;
+  height: 201px;
+}
+
+.card-4 img {
+  width: 270px;
+  height: 201px;
 }
 
 /* Tablet */
