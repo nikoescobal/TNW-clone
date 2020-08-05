@@ -419,10 +419,10 @@ header a {
 }
 
 .card-3 {
-  width: 368px;
+  /* width: 345px;
   height: 611px;
   margin-bottom: 90px;
-  margin-left: 30px;
+  margin-left: 30px; */
 }
 
 .card-3 p ~ first-child,
@@ -436,7 +436,7 @@ header a {
 }
 
 .card-3-image {
-  background: transparent
+  /* background: transparent
     url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png)
     no-repeat;
   background-position-x: initial;
@@ -445,7 +445,7 @@ header a {
   background-attachment: initial;
   background-origin: initial;
   background-clip: initial;
-  background-color: transparent;
+  background-color: transparent; */
 }
 
 .card-3-text {
@@ -504,8 +504,9 @@ header a {
 }
 
 .grid-container-2 {
-  grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
-  width: 97%;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  grid-gap: 24px;
 }
 
 .latest-deals {
@@ -625,10 +626,24 @@ header a {
     display: flex;
     flex-direction: column;
   }
+
   .latest-funding-tablet div {
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
+  }
+
+  .grid-container-2 {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    grid-gap: 24px;
+  }
+
+  .card-3 {
+    /* width: 345px;
+    height: 611px;
+    margin-bottom: 90px;
+    margin-left: 30px; */
   }
 }
 
@@ -777,5 +792,15 @@ header a {
   .latest-funding-mobile div {
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  .grid-container-2 {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .card-3-bottom {
+    display: flex;
+    justify-content: space-between;
   }
 }
