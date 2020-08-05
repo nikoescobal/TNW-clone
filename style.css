@@ -5,7 +5,7 @@
 }
 
 body {
-  /* margin: 0 auto; */
+  margin: 0 auto;
 }
 
 header a {
@@ -13,6 +13,10 @@ header a {
 }
 
 /* Generic Classes */
+
+.strikethrough {
+  text-decoration: line-through;
+}
 
 .gray-text {
   color: #ffffff99;
@@ -294,12 +298,8 @@ header a {
 .latest-news {
   border: palevioletred 3px solid;
   width: 100%;
-  padding: 12px;
+  padding: 10px 10px 0 8px;
   margin-top: 60px;
-}
-
-.latest-news h2 {
-  /* margin: 90px 0 10px 28px; */
 }
 
 .latest-news h2 a:hover .special-arrow {
@@ -310,18 +310,16 @@ header a {
   text-decoration: none;
   font-family: "Avalon", serif;
   font-size: 28px;
-  color: #ff4422;
+  color: #f42;
 }
 
 .latest-news-container {
   grid-template-columns: repeat(4, 1fr);
-  /* grid-row-gap: 46px; */
   width: 100%;
   grid-gap: 24px;
 }
 
 .latest-funding {
-  /* margin: 50px 30px; */
   margin-top: 90px;
 }
 
@@ -418,16 +416,18 @@ header a {
 }
 
 .card-1-mobile-text p,
-.card-1-mobile-text span {
+.card-1-mobile-text span,
+.card-4-mobile-text span {
   font-size: 12px;
-  color: #aaaaaa;
+  color: #aaa;
+}
+
+.card-4-mobile-text p {
+  color: #555;
 }
 
 .card-3 {
-  /* width: 345px;
-  height: 611px;
-  margin-bottom: 90px;
-  margin-left: 30px; */
+  width: 100%;
 }
 
 .card-3 p ~ first-child,
@@ -438,19 +438,6 @@ header a {
 
 .card-3 h2 {
   color: #f42;
-}
-
-.card-3-image {
-  /* background: transparent
-    url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png)
-    no-repeat;
-  background-position-x: initial;
-  background-position-y: initial;
-  background-size: 100% 100%;
-  background-attachment: initial;
-  background-origin: initial;
-  background-clip: initial;
-  background-color: transparent; */
 }
 
 .card-3-text {
@@ -515,27 +502,34 @@ header a {
 }
 
 .latest-deals {
-  margin: 40px auto;
+  border: palevioletred 3px solid;
+  width: 100%;
+  padding: 10px 10px 0 8px;
+  margin-top: 60px;
+}
+
+.latest-deals-container {
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  grid-gap: 24px;
+  margin-top: 12px;
 }
 
 .latest-deals h2 a {
   font-family: "Avalon", serif;
   font-size: 28px;
-  margin-left: 30px;
   text-decoration: none;
   color: #f42;
 }
 
-.latest-deals p {
-  margin-right: 30px;
+.latest-deals h2 ~ p {
   font-family: "ARS Maquette", serif;
   font-size: 16px;
   color: #f42;
 }
 
 .card-4 {
-  width: 270px;
-  height: 201px;
+  width: 100%;
 }
 
 .card-4 img {
@@ -612,8 +606,14 @@ header a {
   }
 
   .card-1 {
+    margin-top: 20px;
     width: 100%;
-    height: 218px;
+    padding: 12px;
+  }
+
+  .card-4 {
+    margin-top: 20px;
+    width: 100%;
     padding: 12px;
   }
 
@@ -645,10 +645,7 @@ header a {
   }
 
   .card-3 {
-    /* width: 345px;
-    height: 611px;
-    margin-bottom: 90px;
-    margin-left: 30px; */
+    width: 100%;
   }
 }
 
@@ -755,9 +752,17 @@ header a {
   .latest-news-container {
     grid-template-columns: 1fr;
     width: 100%;
+    margin-top: 12px;
   }
 
   .card-1 {
+    display: flex;
+    align-items: center;
+    height: 75px;
+    margin-bottom: 10px;
+  }
+
+  .card-4 {
     display: flex;
     align-items: center;
     height: 75px;
@@ -768,13 +773,28 @@ header a {
     font-size: 14px;
   }
 
+  .card-4-mobile-text h3 {
+    font-size: 14px;
+  }
+
   .card-1 img {
     width: 75px;
     height: 75px;
     margin-right: 12px;
   }
 
+  .card-4 img {
+    width: 75px;
+    height: 75px;
+    margin-right: 12px;
+  }
+
   .card-1-mobile-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-4-mobile-text {
     display: flex;
     flex-direction: column;
   }
