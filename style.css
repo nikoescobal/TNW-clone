@@ -5,7 +5,7 @@
 }
 
 body {
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 header a {
@@ -181,7 +181,9 @@ header a {
 .main-image-1 {
   position: relative;
   grid-area: main-1;
-  background-image: url("assets/main-image-1.jpg");
+  background-image: url("assets/main-image-1.jpg"),
+    linear-gradient(transparent, rgba(0, 0, 0) 98%);
+  background-blend-mode: overlay;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -275,6 +277,7 @@ header a {
   height: 4000px;
   border: 4px solid salmon;
   margin: 0 auto;
+  padding: 24px;
 }
 
 .card-0 {
@@ -286,11 +289,13 @@ header a {
 
 .card-1 {
   width: 100%;
-  padding: 12px;
+  /* padding: 12px; */
 }
 
 .latest-news {
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  border: palevioletred 3px solid;
+  /* width: 100%; */
 }
 
 .latest-news h2 {
@@ -310,10 +315,11 @@ header a {
 
 .latest-news-container {
   grid-template-columns: repeat(4, 1fr);
-  grid-row-gap: 46px;
-  width: 97%;
-  height: 50%;
-  margin: 0 auto;
+  /* grid-row-gap: 46px; */
+  /* width: 100%; */
+  /* height: 100%; */
+  /* margin: 0 auto; */
+  border: solid 4px black;
 }
 
 .latest-funding {
@@ -483,13 +489,12 @@ header a {
 }
 
 .card-3 a {
-  list-style: none;
-  list-style-position: inside;
   color: #aaaaaa;
   text-decoration: none;
 }
 
 .card-3 li {
+  list-style: none;
   border-bottom: 1px solid #eee;
   padding: 6px 0;
 }
@@ -506,7 +511,7 @@ header a {
 .grid-container-2 {
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
-  grid-gap: 24px;
+  grid-gap: 56px 24px;
 }
 
 .latest-deals {
