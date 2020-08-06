@@ -545,6 +545,72 @@ header a {
   border-left: 2px solid #f42;
 }
 
+/* Footer Section */
+
+.footer-links {
+  width: 1440px;
+  height: 161px;
+  padding: 45px;
+  background-color: #131313;
+  color: #555;
+}
+
+.footer-links-social {
+  display: flex;
+  width: 1152px;
+  height: 45px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.footer-links-social a {
+  background-color: #333;
+  color: white;
+  width: 80px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.icon-background-image {
+  background-color: #333;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.footer-links-menu {
+  display: flex;
+}
+
+#facebook--dark {
+  filter: invert(1);
+}
+
+#twitter--dark {
+  filter: invert(1);
+}
+
+#youtube--dark {
+  filter: invert(1);
+}
+
+#instagram--dark {
+  filter: invert(1);
+}
+
+#pinterest--dark {
+  filter: invert(1);
+}
+
+#rss--dark {
+  filter: invert(1);
+}
+
+#mail--dark {
+  filter: invert(1);
+}
+
 /* Tablet */
 
 @media (max-width: 1024px) {
