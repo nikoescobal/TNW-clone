@@ -532,6 +532,10 @@ header a {
   width: 100%;
 }
 
+.card-4-discount-container {
+  position: relative;
+}
+
 .card-4 img {
   width: 100%;
 }
@@ -543,6 +547,24 @@ header a {
 .border {
   border-right: 2px solid #f42;
   border-left: 2px solid #f42;
+}
+
+.card-4-discount {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/deals-ribbon.svg");
+  background-repeat: no-repeat;
+}
+
+.card-4-discount h4 {
+  transform: rotate(45deg);
+  font-size: 14px;
+  position: absolute;
+  top: 20px;
+  right: 0;
 }
 
 /* Footer Section */
@@ -747,6 +769,7 @@ header a {
 
   .card-4 {
     width: 100%;
+    /* position: relative; */
   }
 
   .card-4 img {
@@ -759,6 +782,28 @@ header a {
   .border-right-special {
     border-right: none;
   } */
+
+  .card-4-discount-container {
+    position: relative;
+  }
+
+  .card-4-discount {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/deals-ribbon.svg");
+    background-repeat: no-repeat;
+  }
+
+  .card-4-discount h4 {
+    transform: rotate(45deg);
+    font-size: 14px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+  }
 }
 
 /* Mobile */
@@ -957,5 +1002,9 @@ header a {
   .border {
     border-left: none;
     border-right: none;
+  }
+
+  .card-4-discount {
+    visibility: hidden;
   }
 }
