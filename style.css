@@ -536,6 +536,15 @@ header a {
   width: 100%;
 }
 
+.border-right-special {
+  border-right: none;
+}
+
+.border {
+  border-right: 2px solid #f42;
+  border-left: 2px solid #f42;
+}
+
 /* Tablet */
 
 @media (max-width: 1024px) {
@@ -667,6 +676,13 @@ header a {
   .card-4 img {
     width: 100%;
   }
+
+  /* .border-right {
+    border-right: 2px solid #f42;
+  }
+  .border-right-special {
+    border-right: none;
+  } */
 }
 
 /* Mobile */
@@ -860,5 +876,10 @@ header a {
     width: 100%;
     grid-gap: 24px;
     margin-top: 12px;
+  }
+
+  .border {
+    border-left: none;
+    border-right: none;
   }
 }
