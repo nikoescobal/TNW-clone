@@ -14,12 +14,20 @@ header a {
 
 /* Generic Classes */
 
+.white-text {
+  color: white;
+}
+
 .strikethrough {
   text-decoration: line-through;
 }
 
 .gray-text {
   color: #ffffff99;
+}
+
+.light-gray-text {
+  color: #aaa;
 }
 
 .special-arrow {
@@ -182,10 +190,15 @@ header a {
   grid-gap: 0.5rem;
 }
 
+#svg-special {
+  width: 40px;
+  height: 40px;
+}
+
 .main-image-1 {
   position: relative;
   grid-area: main-1;
-  background-image: url("assets/main-image-1.jpg"),
+  background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2019%2F08%2Fbitcoin_today-header_bitcoin_today.jpg&signature=b75eca35f42accc83310a4fa4e562088"),
     linear-gradient(transparent, rgba(0, 0, 0) 98%);
   background-blend-mode: overlay;
   background-position: center;
@@ -219,7 +232,9 @@ header a {
 
 .main-image-2 {
   grid-area: main-2;
-  background-image: url("assets/main-image-2.jpg");
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/kon-karampelas-ft9xWD1dmnY-unsplash-e1594361425850-796x418.jpg"),
+    linear-gradient(transparent, rgba(0, 0, 0) 98%);
+  background-blend-mode: overlay;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -236,7 +251,9 @@ header a {
 
 .main-image-3 {
   grid-area: main-3;
-  background-image: url("assets/main-image-3.jpg");
+  background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F08%2Fwireless-charging-sucks.jpg&signature=d996481867aa432d54bdda92fae09871"),
+    linear-gradient(transparent, rgba(0, 0, 0) 90%);
+  background-blend-mode: overlay;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -252,6 +269,10 @@ header a {
 }
 
 /* Main section */
+
+.main-grid-container p {
+  margin: 10px 0;
+}
 
 .main-image-1 p,
 .main-image-2 p,
@@ -296,10 +317,13 @@ header a {
 }
 
 .latest-news {
-  border: palevioletred 3px solid;
   width: 100%;
   padding: 10px 10px 0 8px;
-  margin-top: 60px;
+  margin-top: 36px;
+}
+
+.latest-news h2 {
+  padding-bottom: 20px;
 }
 
 .latest-news h2 a:hover .special-arrow {
@@ -346,8 +370,21 @@ header a {
   width: 268px; */
   width: 100%;
   /* height: 263px; */
-
   position: relative;
+}
+
+.card-2-top h3 {
+  color: white;
+}
+
+.card-2-top h5 {
+  color: #000;
+  opacity: 0.5;
+}
+
+.card-2-bottom p,
+.card-2-middle p {
+  color: #555;
 }
 
 .card-2-image {
@@ -444,7 +481,7 @@ header a {
   margin-top: 16px;
   padding: 12px;
   height: 274px;
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/1-21-796x417.jpg");
+  background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2019%2F08%2Fbitcoin_today-header_bitcoin_today.jpg&signature=b75eca35f42accc83310a4fa4e562088");
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -654,7 +691,7 @@ header a {
     left: 0;
     top: 0;
     z-index: 100;
-    /* padding: 0 20px; */
+    padding: 0 20px;
     background: linear-gradient(to bottom right, #c09, #f42 85%);
   }
   #first-nav {
@@ -712,7 +749,6 @@ header a {
   }
 
   .card-1 {
-    margin-top: 20px;
     width: 100%;
     padding: 12px;
   }
@@ -906,6 +942,12 @@ header a {
     font-size: 20px;
   }
 
+  .latest-news {
+    width: 100%;
+    padding: 10px 10px 0 8px;
+    margin-top: 30px;
+  }
+
   .latest-news-container {
     grid-template-columns: 1fr;
     width: 100%;
@@ -989,7 +1031,7 @@ header a {
   .latest-deals {
     width: 100%;
     padding: 10px 10px 0 8px;
-    margin-top: 60px;
+    margin-top: 30px;
   }
 
   .latest-deals-container {
