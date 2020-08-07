@@ -318,8 +318,9 @@ header a {
 
 .latest-news {
   width: 100%;
-  padding: 10px 10px 0 8px;
+  /* padding: 10px 10px 0 8px; */
   margin-top: 36px;
+  margin-left: -10px;
 }
 
 .latest-news h2 {
@@ -1021,6 +1022,10 @@ header a {
     font-size: 20px;
   }
 
+  .mobile-ff {
+    font-family: "Shentox";
+  }
+
   .image-2-mobile {
     border-right: 8px solid #eee;
     border-left: 8px solid #eee;
@@ -1048,10 +1053,24 @@ header a {
     font-size: 20px;
   }
 
+  .main-wrapper {
+    /* max-width: 1230px; */
+    width: 100%;
+    /* height: 4000px; */
+    border: 4px solid salmon;
+    margin: 0 auto;
+    /* padding: 24px; */
+  }
+
   .latest-news {
     width: 100%;
-    padding: 10px 10px 0 8px;
+    text-align: left;
+    /* padding: 10px 10px 0 8px; */
     margin-top: 30px;
+  }
+
+  .latest-news h2 {
+    padding-left: 9px;
   }
 
   .latest-news-container {
@@ -1076,6 +1095,16 @@ header a {
 
   .card-1-mobile-text h3 {
     font-size: 14px;
+    font-family: "ARS Maquette";
+  }
+
+  .card-1-mobile-text p {
+    font-family: "ARS Maquette";
+    font-size: 12px;
+  }
+
+  .latest-funding h2 {
+    font-family: "ARS Maquette", serif;
   }
 
   .card-4-mobile-text h3 {
@@ -1114,6 +1143,33 @@ header a {
     display: none;
   }
 
+  .latest-funding {
+    margin-top: 64px;
+    font-size: 14px;
+    font-family: "ARS Maquette";
+  }
+
+  .border {
+    padding: 10px 0;
+  }
+
+  .add-info-desktop {
+    margin-bottom: 10px;
+  }
+
+  .add-info-desktop a {
+    font-size: 14px;
+    font-family: "ARS Maquette";
+  }
+
+  .card-2-middle {
+    font-size: 13px;
+  }
+
+  .card-2-bottom {
+    font-size: 12px;
+  }
+
   .latest-funding-mobile {
     display: flex;
     flex-direction: column;
@@ -1127,6 +1183,7 @@ header a {
   .grid-container-2 {
     grid-template-columns: 1fr;
     width: 100%;
+    margin-top: 40px;
   }
 
   .card-3-bottom {
@@ -1134,16 +1191,49 @@ header a {
     justify-content: space-between;
   }
 
+  .card-3 h2 {
+    font-size: 28px;
+    font-family: "Avalon", serif;
+  }
+
+  .card-3 p:first-child {
+    font-size: 14px;
+    font-family: "ARS Maquette", serif;
+  }
+
+  .card-3 h3 {
+    font-size: 20px;
+    font-family: "ARS Maquette", serif;
+  }
+
+  .card-3 .gray-text {
+    font-size: 12px;
+  }
+
+  .card-3 li a {
+    font-size: 13px;
+    font-family: "ARS Maquatte";
+  }
   .latest-deals {
-    width: 100%;
-    padding: 10px 10px 0 8px;
+    /* width: 100%; */
+    /* padding: 10px 10px 0 8px; */
     margin-top: 30px;
+    text-align: left;
+    margin-left: -15px;
+  }
+
+  .latest-deals h2 {
+    padding-left: 9px;
+  }
+
+  .latest-deals h3 {
+    font-family: "ARS Maquette", serif;
   }
 
   .latest-deals-container {
     grid-template-columns: 1fr;
     width: 100%;
-    grid-gap: 24px;
+    gap: unset;
     margin-top: 12px;
   }
 
@@ -1152,7 +1242,25 @@ header a {
     border-right: none;
   }
 
+  .card-4 {
+    margin-top: 0;
+  }
+
+  .card-4-mobile-text .strikethrough {
+    font-size: 12px;
+    font-family: "ARS Maquette", serif;
+  }
+
+  .card-4-mobile-text p {
+    font-size: 14px;
+    font-family: "ARS Maquette", serif;
+  }
+
   .card-4-discount {
     visibility: hidden;
+  }
+
+  .footer-copyright {
+    flex-wrap: wrap;
   }
 }
