@@ -176,6 +176,7 @@ header a {
 .search-icon:hover {
   color: gray;
 }
+
 /* Desktop */
 
 /* Main section Images */
@@ -184,9 +185,7 @@ header a {
   border: 8px solid #eee;
   border-bottom: none;
   display: grid;
-  grid-template-areas:
-    "main-1  main-1   main-2"
-    "main-1  main-1  main-3";
+  grid-template-areas: "main-1  main-1   main-2" "main-1  main-1  main-3";
   grid-gap: 0.5rem;
 }
 
@@ -214,7 +213,6 @@ header a {
 .main-image-1 h1 {
   font-family: "Avalon";
   font-size: 45px;
-  padding-bottom: 20px;
 }
 
 #desktop-white-logo {
@@ -320,7 +318,7 @@ header a {
   width: 100%;
   /* padding: 10px 10px 0 8px; */
   margin-top: 36px;
-  margin-left: -10px;
+  margin-left: -11px;
 }
 
 .latest-news h2 {
@@ -368,7 +366,7 @@ header a {
 
 .card-2 {
   /* min-width: 268px;
-  width: 268px; */
+width: 268px; */
   width: 100%;
   /* height: 263px; */
   position: relative;
@@ -813,24 +811,18 @@ header a {
     /* top: 30px; */
     /* left: 106px; */
   }
-
   #desktop-white-logo {
     display: none;
   }
-
   .main-grid-container {
     display: grid;
-    grid-template-areas:
-      "main-image-1  main-image-1   main-image-2 "
-      "main-image-1  main-image-1   main-image-3 ";
+    grid-template-areas: "main-image-1  main-image-1   main-image-2 " "main-image-1  main-image-1   main-image-3 ";
     grid-gap: 0.5rem;
   }
-
   .main-image-1 {
     min-height: 466px;
     grid-area: main-image-1;
   }
-
   .main-image-1 h1 {
     font-size: 40px;
   }
@@ -838,98 +830,92 @@ header a {
     min-height: 136px;
     grid-area: main-image-2;
   }
-
   .main-image-2 h2,
   .main-image-3 h2 {
     font-size: 20px;
   }
-
   .main-image-3 {
     min-height: 136px;
     grid-area: main-image-3;
   }
-
+  .latest-news h2 a {
+    margin-left: 12px;
+  }
   .latest-news-container {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0.5rem;
     width: 100%;
   }
-
   .card-1 {
     width: 100%;
     padding: 12px;
   }
-
   .card-4 {
     margin-top: 20px;
     /* width: 100%; */
     padding: 12px;
   }
-
   .card-2-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
   }
-
   .card-2:last-child {
     display: none;
   }
-
+  .add-info-desktop a {
+    margin-left: -10px;
+  }
+  .add-info-desktop {
+    margin-left: -7px;
+  }
   .latest-funding-tablet {
     display: flex;
     flex-direction: column;
   }
-
+  .latest-funding h2 {
+    font-size: 28px;
+    color: #ff4422;
+    margin: -16px 0 -16px -2px;
+  }
   .latest-funding-tablet div {
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
   }
-
-  .grid-container-2 {
-    grid-template-columns: repeat(2, 1fr);
-    width: 100%;
-    grid-gap: 24px;
+  .grid-container-2 h2 {
+    margin-top: -28px;
   }
-
   .card-3 {
     width: 100%;
   }
-
   .latest-deals {
     width: 100%;
     padding: 10px 10px 0 8px;
     margin-top: 60px;
   }
-
   .latest-deals-container {
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
     grid-gap: 10px;
     margin-top: 12px;
   }
-
   .card-4 {
     width: 100%;
     /* position: relative; */
   }
-
   .card-4 img {
     width: 100%;
   }
-
   /* .border-right {
-    border-right: 2px solid #f42;
-  }
-  .border-right-special {
-    border-right: none;
-  } */
-
+  border-right: 2px solid #f42;
+}
+.border-right-special {
+  border-right: none;
+} */
   .card-4-discount-container {
     position: relative;
   }
-
   .card-4-discount {
     position: absolute;
     top: 0;
@@ -939,7 +925,6 @@ header a {
     background-image: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/deals-ribbon.svg");
     background-repeat: no-repeat;
   }
-
   .card-4-discount h4 {
     transform: rotate(45deg);
     font-size: 14px;
@@ -959,7 +944,6 @@ header a {
     padding: 16px 20px;
     width: 106px;
   }
-
   .hamburger-icon-mobile {
     cursor: pointer;
     display: block;
@@ -969,7 +953,6 @@ header a {
     margin-right: 16px;
     margin-top: 16px;
   }
-
   .search-icon-mobile {
     cursor: pointer;
     display: block;
@@ -981,18 +964,15 @@ header a {
     padding: 16px;
     margin-right: 50px;
   }
-
   .search-icon-mobile:hover {
     filter: invert(1);
     border-left: 1px solid #111;
     border-right: 1px solid #111;
   }
-
   #first-nav,
   #second-nav {
     display: none;
   }
-
   #desktop-white-logo,
   .desktop-date {
     display: none;
@@ -1000,13 +980,9 @@ header a {
   .main-grid-container {
     border: none;
     display: grid;
-    grid-template-areas:
-      "main-1"
-      "main-2"
-      "main-3";
+    grid-template-areas: "main-1" "main-2" "main-3";
     cursor: pointer;
   }
-
   .image-1-mobile {
     border-top: 8px solid #eee;
     border-right: 8px solid #eee;
@@ -1017,15 +993,12 @@ header a {
     padding-top: 62px;
     padding-left: 10px;
   }
-
   .image-1-mobile h1 {
     font-size: 20px;
   }
-
   .mobile-ff {
     font-family: "Shentox";
   }
-
   .image-2-mobile {
     border-right: 8px solid #eee;
     border-left: 8px solid #eee;
@@ -1035,11 +1008,9 @@ header a {
     padding-top: 62px;
     display: flex;
   }
-
   .image-2-mobile h2 {
     font-size: 20px;
   }
-
   .image-3-mobile {
     border-right: 8px solid #eee;
     border-left: 8px solid #eee;
@@ -1048,168 +1019,136 @@ header a {
     padding-top: 62px;
     padding-left: 10px;
   }
-
   .image-3-mobile h2 {
     font-size: 20px;
   }
-
   .main-wrapper {
     /* max-width: 1230px; */
     width: 100%;
     /* height: 4000px; */
-    border: 4px solid salmon;
+    /* border: 4px solid salmon; */
     margin: 0 auto;
     /* padding: 24px; */
   }
-
   .latest-news {
     width: 100%;
     text-align: left;
     /* padding: 10px 10px 0 8px; */
     margin-top: 30px;
   }
-
-  .latest-news h2 {
-    padding-left: 9px;
-  }
-
   .latest-news-container {
     grid-template-columns: 1fr;
     width: 100%;
     margin-top: 12px;
   }
-
   .card-1 {
     display: flex;
     align-items: center;
     height: 75px;
     margin-bottom: 10px;
   }
-
   .card-4 {
     display: flex;
     align-items: center;
     height: 75px;
     margin-bottom: 10px;
   }
-
   .card-1-mobile-text h3 {
     font-size: 14px;
     font-family: "ARS Maquette";
   }
-
   .card-1-mobile-text p {
     font-family: "ARS Maquette";
     font-size: 12px;
   }
-
   .latest-funding h2 {
     font-family: "ARS Maquette", serif;
   }
-
   .card-4-mobile-text h3 {
     font-size: 14px;
   }
-
   .card-1 img {
     width: 75px;
     height: 75px;
     margin-right: 12px;
   }
-
   .card-4 img {
     width: 75px;
     height: 75px;
     margin-right: 12px;
   }
-
   .card-1-mobile-text {
     display: flex;
     flex-direction: column;
   }
-
   .card-4-mobile-text {
     display: flex;
     flex-direction: column;
   }
-
   .card-2-container {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1rem;
   }
-
   .card-2:last-child {
     display: none;
   }
-
   .latest-funding {
     margin-top: 64px;
     font-size: 14px;
     font-family: "ARS Maquette";
   }
-
-  .border {
-    padding: 10px 0;
-  }
-
   .add-info-desktop {
-    margin-bottom: 10px;
+    padding: 16px 0;
   }
-
   .add-info-desktop a {
+    padding: 10px;
     font-size: 14px;
     font-family: "ARS Maquette";
   }
-
   .card-2-middle {
     font-size: 13px;
   }
-
   .card-2-bottom {
     font-size: 12px;
   }
-
+  .latest-funding h2 {
+    font-size: 28px;
+    color: #ff4422;
+    margin-bottom: -14px;
+  }
   .latest-funding-mobile {
     display: flex;
     flex-direction: column;
   }
-
   .latest-funding-mobile div {
     display: flex;
     flex-direction: column-reverse;
   }
-
   .grid-container-2 {
     grid-template-columns: 1fr;
     width: 100%;
     margin-top: 40px;
   }
-
   .card-3-bottom {
     display: flex;
     justify-content: space-between;
   }
-
   .card-3 h2 {
     font-size: 28px;
     font-family: "Avalon", serif;
   }
-
   .card-3 p:first-child {
     font-size: 14px;
     font-family: "ARS Maquette", serif;
   }
-
   .card-3 h3 {
     font-size: 20px;
     font-family: "ARS Maquette", serif;
   }
-
   .card-3 .gray-text {
     font-size: 12px;
   }
-
   .card-3 li a {
     font-size: 13px;
     font-family: "ARS Maquatte";
@@ -1219,48 +1158,49 @@ header a {
     /* padding: 10px 10px 0 8px; */
     margin-top: 30px;
     text-align: left;
-    margin-left: -15px;
+    margin-left: -19px;
   }
-
   .latest-deals h2 {
     padding-left: 9px;
   }
-
   .latest-deals h3 {
     font-family: "ARS Maquette", serif;
   }
-
   .latest-deals-container {
     grid-template-columns: 1fr;
     width: 100%;
     gap: unset;
     margin-top: 12px;
   }
-
   .border {
     border-left: none;
     border-right: none;
   }
-
   .card-4 {
     margin-top: 0;
   }
-
   .card-4-mobile-text .strikethrough {
     font-size: 12px;
     font-family: "ARS Maquette", serif;
   }
-
   .card-4-mobile-text p {
     font-size: 14px;
     font-family: "ARS Maquette", serif;
   }
-
   .card-4-discount {
     visibility: hidden;
   }
-
   .footer-copyright {
     flex-wrap: wrap;
+  }
+  h1 {
+    margin: -16px 0;
+    padding-bottom: 0;
+  }
+  .main-grid-container p {
+    padding: 10px 0;
+  }
+  .main-grid-container h2 {
+    margin: -12px 0;
   }
 }
