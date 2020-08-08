@@ -4,6 +4,19 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: “ARS Maquette”;
+  src: url(“assets/font/ARSMaquettePro-Regular.ttf”);
+}
+@font-face {
+  font-family: “Avalon”;
+  src: url(“assets/font/Avalon-Bold.ttf”);
+}
+@font-face {
+  font-family: “Shentox”;
+  src: url(“assets/font/Shentox.ttf”);
+}
+
 body {
   margin: 0 auto;
 }
