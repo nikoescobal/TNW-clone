@@ -5,15 +5,15 @@
 }
 
 @font-face {
-  font-family: “ARS Maquette”;
-  src: url(/assets/font/ARSMaquettePro-Regular.ttf);
+  font-family: "ARS Maquette";
+  src: url(assets/font/ARSMaquettePro-Regular.ttf);
 }
 @font-face {
-  font-family: “Avalon”;
+  font-family: "Avalon";
   src: url(assets/font/Avalon-Bold.ttf);
 }
 @font-face {
-  font-family: “Shentox”;
+  font-family: "Shentox";
   src: url(assets/font/Shentox.ttf);
 }
 
@@ -398,6 +398,11 @@ header a {
   font-size: 28px;
   color: #ff4422;
   margin-bottom: 24px;
+}
+
+.latest-funding h2:hover ~ .arrow-special {
+  fill: aquamarine;
+  color: blueviolet;
 }
 
 .latest-funding a {
@@ -795,15 +800,27 @@ width: 268px; */
 }
 
 .footer-links-social a {
-  background-color: white;
+  background-color: #333;
   padding: 12px;
   border-radius: 50%;
   margin: 10px;
   display: flex;
 }
 
+.footer-links-social svg {
+  filter: invert(1);
+}
+
+.footer-links-social li a {
+  border: 1px solid #555;
+}
+
+.footer-links-social li a:hover {
+  background-color: black;
+}
+
 .footer-links-social svg:hover {
-  fill: #f42;
+  /* fill: #f42; */
   border: none;
 }
 
