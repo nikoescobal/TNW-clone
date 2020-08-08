@@ -190,6 +190,7 @@ header a {
 /* Main section Images */
 
 .main-grid-container {
+  grid-template-columns: repeat(3, 1fr);
   border: 8px solid #eee;
   border-bottom: none;
   display: grid;
@@ -214,7 +215,6 @@ header a {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 545px;
-  max-width: 945px;
   color: white;
   padding: 0 10px 0px 10px;
   cursor: pointer;
@@ -1028,8 +1028,8 @@ width: 268px; */
   }
   .main-grid-container {
     border: none;
-    display: grid;
-    grid-template-areas: "main-1" "main-2" "main-3";
+    display: flex;
+    flex-direction: column;
     cursor: pointer;
   }
   .image-1-mobile {
