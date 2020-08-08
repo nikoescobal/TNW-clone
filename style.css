@@ -145,6 +145,10 @@ header a {
   list-style-type: none;
 }
 
+#first-nav li:first-of-type {
+  margin-left: -10px;
+}
+
 #first-nav a {
   color: white;
   margin-left: 12px;
@@ -152,6 +156,10 @@ header a {
 
 #second-nav li {
   list-style-type: none;
+}
+
+#second-nav li:first-of-type {
+  margin-left: -7px;
 }
 
 #second-nav a:first-child {
@@ -185,7 +193,9 @@ header a {
   border: 8px solid #eee;
   border-bottom: none;
   display: grid;
-  grid-template-areas: "main-1  main-1   main-2" "main-1  main-1  main-3";
+  grid-template-areas:
+    "main-1  main-1   main-2"
+    "main-1   main-1   main-3";
   grid-gap: 0.5rem;
 }
 
@@ -204,15 +214,18 @@ header a {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 545px;
+  max-width: 945px;
   color: white;
-  padding-bottom: 20px;
-  padding-left: 20px;
+  padding: 0 10px 0px 10px;
   cursor: pointer;
 }
 
 .main-image-1 h1 {
   font-family: "Avalon";
-  font-size: 45px;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -0.84px;
+  margin: 5px 0 5px;
 }
 
 #desktop-white-logo {
@@ -223,9 +236,9 @@ header a {
 
 .desktop-date {
   position: absolute;
-  top: 20px;
+  top: 16px;
   right: 0;
-  margin-right: 30px;
+  margin-right: 22px;
 }
 
 .main-image-2 {
@@ -237,14 +250,17 @@ header a {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  padding: 0 10px 20px 10px;
+  padding: 0 10px 0px 10px;
   cursor: pointer;
 }
 
 .main-image-2 h2 {
   font-size: 28px;
   font-family: "Avalon";
-  padding-bottom: 10px;
+  padding-bottom: 3px;
+  letter-spacing: -0.42px;
+  line-height: 30.8px;
+  margin: 3px 0 0;
 }
 
 .main-image-3 {
@@ -256,25 +272,28 @@ header a {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  padding: 0 10px 20px 10px;
+  padding: 0 10px 0px 10px;
   cursor: pointer;
 }
 
 .main-image-3 h2 {
   font-size: 28px;
   font-family: "Avalon";
-  padding-bottom: 10px;
+  padding-bottom: 3px;
+  letter-spacing: -0.42px;
+  line-height: 30.8px;
+  margin: 3px 0 0;
 }
 
 /* Main section */
 
 .main-grid-container p {
-  margin: 10px 0;
+  margin: 2px 0;
 }
 
-.main-image-1 p,
-.main-image-2 p,
-.main-image-3 p {
+.main-image-1 p:last-child,
+.main-image-2 p:last-child,
+.main-image-3 p:last-child {
   color: hsla(0, 0%, 100%, 0.6);
 }
 
@@ -318,16 +337,32 @@ header a {
   width: 100%;
   /* padding: 10px 10px 0 8px; */
   margin-top: 36px;
-  margin-left: -11px;
+  /* margin-left: -11px; */
 }
 
 .latest-news h2 {
-  padding-bottom: 20px;
+  margin-bottom: 24px;
+}
+
+.latest-news p {
+  padding: 8px 0;
+}
+
+.latest-news h3 {
+  padding-top: 8px;
 }
 
 .latest-news-hover h2 a:hover {
   color: black;
 }
+
+/* .latest-news-hover h2:hover .fa-chevron-right fa-xs {
+  color: black;
+} */
+
+/* .fa-chevron-right:before {
+  content: "\f054";
+} */
 
 .latest-news h2 a {
   text-decoration: none;
@@ -356,6 +391,10 @@ header a {
   text-decoration: none;
   font-size: 16px;
   color: #ff4422;
+}
+
+.add-info-desktop {
+  margin-right: -6px;
 }
 
 .card-2-container {
@@ -458,6 +497,10 @@ width: 268px; */
   color: #aaa;
 }
 
+.card-3-bottom div h4 {
+  margin: 0 4px;
+}
+
 .card-4-mobile-text p {
   color: #555;
 }
@@ -478,6 +521,12 @@ width: 268px; */
 
 .card-3 p {
   padding: 6px 0;
+}
+
+.card-3-image {
+  object-fit: cover;
+  width: 95px;
+  height: 95px;
 }
 
 .card-3-content-1 {
