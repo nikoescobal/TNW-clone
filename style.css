@@ -386,9 +386,10 @@ header a {
 }
 
 .main-wrapper {
-  max-width: 1192px;
+  max-width: 1300px;
+  width: 100%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .card-0 {
@@ -399,6 +400,11 @@ header a {
 }
 
 .card-1 {
+  width: 100%;
+}
+
+.card-1 img {
+  object-fit: cover;
   width: 100%;
 }
 
@@ -427,6 +433,7 @@ header a {
 
 .card-1-mobile-text h3 a {
   color: black;
+  text-decoration: none;
 }
 
 .card-1-mobile-text h3 a:hover {
@@ -872,7 +879,7 @@ width: 268px; */
 .latest-deals {
   /* border: palevioletred 3px solid; */
   width: 100%;
-  padding: 10px 10px 0 8px;
+  /* padding: 10px 10px 0 8px; */
   margin-top: 60px;
 }
 
@@ -881,6 +888,7 @@ width: 268px; */
   width: 100%;
   grid-gap: 24px;
   margin-top: 12px;
+  padding-bottom: 88px;
 }
 
 .latest-deals h2 a {
@@ -890,10 +898,20 @@ width: 268px; */
   color: #f42;
 }
 
+.latest-deals h2 a:hover {
+  color: black;
+}
+
 .latest-deals h2 ~ p {
   font-family: "ARS Maquette", serif;
   font-size: 16px;
   color: #f42;
+}
+
+.latest-deals h3 {
+  font-size: 16px;
+  font-family: "ARS Maquette-bold", sans-serif;
+  padding: 5px 0;
 }
 
 .card-4 {
@@ -906,6 +924,8 @@ width: 268px; */
 
 .card-4 img {
   width: 100%;
+  height: 201px;
+  object-fit: cover;
 }
 
 .border-right-special {
@@ -1082,7 +1102,7 @@ width: 268px; */
   }
   .latest-news-container {
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 0.5rem;
+    grid-gap: 24px;
     width: 100%;
   }
   .card-1 {
@@ -1099,8 +1119,12 @@ width: 268px; */
   .card-4 {
     margin-top: 20px;
     /* width: 100%; */
-    padding: 12px;
   }
+
+  .card-4 img {
+    height: 234px;
+  }
+
   .card-2-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1177,7 +1201,7 @@ width: 268px; */
   }
   .latest-deals {
     width: 100%;
-    padding: 10px 10px 0 8px;
+    /* padding: 10px 10px 0 8px; */
     margin-top: 60px;
   }
   .latest-deals-container {
@@ -1185,6 +1209,7 @@ width: 268px; */
     width: 100%;
     grid-gap: 10px;
     margin-top: 12px;
+    padding-bottom: 88px;
   }
   .card-4 {
     width: 100%;
@@ -1230,6 +1255,7 @@ width: 268px; */
     padding: 16px 20px;
     width: 106px;
   }
+
   .hamburger-icon-mobile {
     cursor: pointer;
     display: block;
@@ -1307,14 +1333,14 @@ width: 268px; */
   .image-3-mobile h2 {
     font-size: 20px;
   }
-  .main-wrapper {
-    /* max-width: 1230px; */
+  /* .main-wrapper {
+    max-width: 1230px;
     width: 100%;
-    /* height: 4000px; */
-    /* border: 4px solid salmon; */
+    height: 4000px;
+    border: 4px solid salmon;
     margin: 0 auto;
-    /* padding: 24px; */
-  }
+    padding: 24px;
+  } */
   .latest-news {
     width: 100%;
     text-align: left;
@@ -1387,7 +1413,7 @@ width: 268px; */
   .card-4 img {
     width: 75px;
     height: 75px;
-    margin-right: 12px;
+    margin-right: 14px;
     object-fit: cover;
   }
   .card-1-mobile-text {
@@ -1471,10 +1497,8 @@ width: 268px; */
     /* padding: 10px 10px 0 8px; */
     margin-top: 30px;
     text-align: left;
-    margin-left: -19px;
   }
   .latest-deals h2 {
-    padding-left: 9px;
   }
   .latest-deals h3 {
     font-family: "ARS Maquette", serif;
@@ -1484,6 +1508,7 @@ width: 268px; */
     width: 100%;
     gap: unset;
     margin-top: 12px;
+    padding-bottom: 88px;
   }
   .border {
     border-left: none;
