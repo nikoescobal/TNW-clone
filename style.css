@@ -223,8 +223,8 @@ header a {
   border-bottom: none;
   display: grid;
   grid-template-areas:
-    "main-1  main-1   main-2"
-    "main-1   main-1   main-3";
+    "main-image-1  main-image-1    main-image-2"
+    "main-image-1  main-image-1    main-image-3";
   grid-gap: 0.5rem;
 }
 
@@ -235,7 +235,7 @@ header a {
 
 .main-image-1 {
   position: relative;
-  grid-area: main-1;
+  grid-area: main-image-1;
   background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2019%2F08%2Fbitcoin_today-header_bitcoin_today.jpg&signature=b75eca35f42accc83310a4fa4e562088"),
     linear-gradient(transparent, rgba(0, 0, 0) 98%);
   background-blend-mode: overlay;
@@ -292,7 +292,7 @@ header a {
 }
 
 .main-image-2 {
-  grid-area: main-2;
+  grid-area: main-image-2;
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/kon-karampelas-ft9xWD1dmnY-unsplash-e1594361425850-796x418.jpg"),
     linear-gradient(transparent, rgba(0, 0, 0) 98%);
   background-blend-mode: overlay;
@@ -321,7 +321,7 @@ header a {
 }
 
 .main-image-3 {
-  grid-area: main-3;
+  grid-area: main-image-3;
   background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F08%2Fwireless-charging-sucks.jpg&signature=d996481867aa432d54bdda92fae09871"),
     linear-gradient(transparent, rgba(0, 0, 0) 90%);
   background-blend-mode: overlay;
@@ -1051,7 +1051,9 @@ width: 268px; */
   }
   .main-grid-container {
     display: grid;
-    grid-template-areas: "main-image-1  main-image-1   main-image-2 " "main-image-1  main-image-1   main-image-3 ";
+    grid-template-areas:
+      "main-image-1  main-image-1   main-image-2 "
+      "main-image-1  main-image-1   main-image-3 ";
     grid-gap: 0.5rem;
   }
   .main-image-1 {
