@@ -29,7 +29,7 @@ git clone git@github.com:nikoescobal/tnw-clone.git
 
 - Github:[@KartheekWD](https://github.com/KartheekWD)
 - Twitter:[@KartheekWD](https://twitter.com/KartheekWD)
-- LinkedIn:[Kartheek Paturu](https://www.linkedin.com/in/kartheekwd)
+- LinkedIn:[@Kartheek Paturu](https://www.linkedin.com/in/kartheekwd)
 
 👤 **Nikolas Escobal**
 
