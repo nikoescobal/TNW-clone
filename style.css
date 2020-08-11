@@ -369,7 +369,7 @@ header a {
   color: hsla(0, 0%, 100%, 0.6);
 }
 
-#clock--dark {
+.clock-dark {
   fill: rgba(255, 255, 255, 0.6);
   margin: 0 2px -2px 5px;
 }
@@ -1498,8 +1498,7 @@ width: 268px; */
     margin-top: 30px;
     text-align: left;
   }
-  .latest-deals h2 {
-  }
+
   .latest-deals h3 {
     font-family: "ARS Maquette", serif;
   }
