@@ -5,7 +5,7 @@
 }
 
 @font-face {
-  font-family: "ARS Maquette";
+  font-family: "ARS Maquette", sans-serif;
   src: url(assets/font/ARSMaquettePro-Regular.ttf);
 }
 
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-family: "Shentox";
+  font-family: "Shentox", sans-serif;
   src: url(assets/font/Shentox.ttf);
 }
 
@@ -26,7 +26,7 @@
 
 body {
   margin: 0 auto;
-  font-family: "ARS Maquette", serif;
+  font-family: "ARS Maquette", sans-serif;
 }
 
 header a {
@@ -56,15 +56,11 @@ header a {
 }
 
 .gray-text {
-  color: #ffffff99;
+  color: #fff9;
 }
 
 .light-gray-text {
   color: #aaa;
-}
-
-.special-arrow {
-  color: #ff4422;
 }
 
 .uppercase {
@@ -119,10 +115,6 @@ header a {
   justify-content: space-around;
 }
 
-.space-around {
-  justify-content: space-around;
-}
-
 .flex-end {
   justify-content: flex-end;
 }
@@ -149,33 +141,111 @@ header a {
   display: none;
 }
 
-#first-nav ul li a {
-  font-family: "ARS Maquette";
-  color: #ffffff99;
+.latest-funding a {
+  text-decoration: none;
+  color: #f42;
 }
 
-#first-nav a:hover {
-  color: rgb(255, 255, 255);
+.footer-links-social a {
+  background-color: #333;
+  padding: 12px;
+  border-radius: 50%;
+  margin: 10px;
+  display: flex;
 }
 
-#first-nav ul:first-child li:first-child a {
+.footer-links-menu a {
+  color: #aaa;
+  margin: 20px 6px;
+  text-decoration: none;
+  font-size: 12px;
+  font-family: "Shentox", serif;
+}
+
+.latest-news h2 a {
+  text-decoration: none;
+  font-family: "Avalon", serif;
+  font-size: 28px;
+  color: #f42;
+}
+
+.card-1-mobile-text h3 a {
+  color: black;
+  text-decoration: none;
+}
+
+.latest-funding h2 a {
+  text-decoration: none;
+  font-size: 28px;
+  color: #f42;
+  font-family: "Avalon", sans-serif;
+}
+
+.card-3 li a {
+  color: #555;
+  font-size: 13px;
+}
+
+.latest-deals h2 a {
+  font-family: "Avalon", sans-serif;
+  font-size: 28px;
+  text-decoration: none;
+  color: #f42;
+}
+
+.footer-links-social li a {
+  border: transparent 1px solid;
+}
+
+.card-3 a:last-child {
+  text-decoration: none;
+  color: #aaa;
+}
+
+.footer-links-menu a:hover {
   color: white;
 }
 
-#first-nav {
-  height: 32px;
-  font-family: "ARS Maquette";
+.card-3 li a:hover {
+  color: black;
+}
+
+.latest-funding h2 a:hover {
+  color: black;
+}
+
+.latest-news h2 a:hover {
+  color: black;
+}
+
+.card-1-mobile-text h3 a:hover {
+  color: #f42;
+  text-decoration: underline;
+}
+
+.card-3 h2 a:first-child {
+  font-family: "Avalon", sans-serif;
+  font-size: 28px;
+  text-decoration: none;
+  color: #f42;
+  line-height: 30.8px;
+  letter-spacing: -0.42px;
+}
+
+.latest-deals h2 a:hover {
+  color: black;
+}
+
+.footer-links-social li a:hover {
   background-color: #131313;
-  list-style: none;
-  padding: 10px 20px 10px;
+  border: 1px solid #555;
 }
 
-#first-nav li {
-  list-style-type: none;
-}
-
-#first-nav li:first-of-type {
-  margin-left: -10px;
+.card-3 h2 a:first-child:hover {
+  font-family: "Avalon", sans-serif;
+  font-size: 28px;
+  text-decoration: none;
+  color: black;
 }
 
 #first-nav a {
@@ -183,12 +253,13 @@ header a {
   margin-left: 12px;
 }
 
-#second-nav li {
-  list-style-type: none;
+#first-nav ul li a {
+  font-family: "ARS Maquette", sans-serif;
+  color: #fff9;
 }
 
-#second-nav li:first-of-type {
-  margin-left: -7px;
+#first-nav a:hover {
+  color: rgb(255, 255, 255);
 }
 
 #second-nav a:first-child {
@@ -198,6 +269,37 @@ header a {
 
 #second-nav a:hover {
   color: #131313;
+}
+
+#first-nav ul:first-child li:first-child a {
+  color: white;
+}
+
+#first-nav {
+  height: 32px;
+  font-family: "ARS Maquette", sans-serif;
+  background-color: #131313;
+  list-style: none;
+  padding: 10px 20px 10px;
+}
+
+.card-3 li {
+  list-style: none;
+  border-bottom: 1px solid #eee;
+  padding: 6px 0;
+}
+
+#first-nav li,
+#second-nav li {
+  list-style-type: none;
+}
+
+#first-nav li:first-of-type {
+  margin-left: -10px;
+}
+
+#second-nav li:first-of-type {
+  margin-left: -7px;
 }
 
 #second-nav {
@@ -237,8 +339,7 @@ header a {
 .main-image-1 {
   position: relative;
   grid-area: main-image-1;
-  background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2019%2F08%2Fbitcoin_today-header_bitcoin_today.jpg&signature=b75eca35f42accc83310a4fa4e562088"),
-    linear-gradient(transparent, rgba(0, 0, 0) 98%);
+  background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2019%2F08%2Fbitcoin_today-header_bitcoin_today.jpg&signature=b75eca35f42accc83310a4fa4e562088"), linear-gradient(transparent, rgba(0, 0, 0) 98%);
   background-blend-mode: overlay;
   background-position: center;
   background-repeat: no-repeat;
@@ -257,7 +358,7 @@ header a {
 }
 
 .main-image-1 h1 {
-  font-family: "Avalon";
+  font-family: "Avalon", sans-serif;
   font-size: 56px;
   line-height: 54px;
   letter-spacing: -0.84px;
@@ -275,14 +376,13 @@ header a {
   top: 16px;
   right: 0;
   margin-right: 22px;
-  font-family: "ARS Maquette", serif;
+  font-family: "ARS Maquette", sans-serif;
   font-size: 14px;
 }
 
 .main-image-2 {
   grid-area: main-image-2;
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/kon-karampelas-ft9xWD1dmnY-unsplash-e1594361425850-796x418.jpg"),
-    linear-gradient(transparent, rgba(0, 0, 0) 98%);
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/kon-karampelas-ft9xWD1dmnY-unsplash-e1594361425850-796x418.jpg"), linear-gradient(transparent, rgba(0, 0, 0) 98%);
   background-blend-mode: overlay;
   background-position: center;
   background-repeat: no-repeat;
@@ -302,7 +402,7 @@ header a {
 
 .main-image-2 h2 {
   font-size: 28px;
-  font-family: "Avalon";
+  font-family: "Avalon", sans-serif;
   letter-spacing: 0.58px;
   line-height: 32px;
   padding: 2px 0 5px;
@@ -310,8 +410,7 @@ header a {
 
 .main-image-3 {
   grid-area: main-image-3;
-  background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F08%2Fwireless-charging-sucks.jpg&signature=d996481867aa432d54bdda92fae09871"),
-    linear-gradient(transparent, rgba(0, 0, 0) 90%);
+  background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F08%2Fwireless-charging-sucks.jpg&signature=d996481867aa432d54bdda92fae09871"), linear-gradient(transparent, rgba(0, 0, 0) 90%);
   background-blend-mode: overlay;
   background-position: center;
   background-repeat: no-repeat;
@@ -331,7 +430,7 @@ header a {
 
 .main-image-3 h2 {
   font-size: 28px;
-  font-family: "Avalon";
+  font-family: "Avalon", sans-serif;
   letter-spacing: -0.42px;
   line-height: 32px;
   padding: 2px 0 5px;
@@ -341,6 +440,44 @@ header a {
 
 .main-grid-container p {
   padding: 3px 0 5px;
+}
+
+.latest-news p {
+  margin-bottom: 28px;
+}
+
+.card-2-middle p {
+  color: #555;
+  font-size: 13px;
+  font-family: "ARS Maquette", sans-serif;
+  cursor: pointer;
+}
+
+.card-2-bottom p {
+  font-size: 12px;
+  font-family: "ARS Maquette", sans-serif;
+}
+
+.card-1-mobile-text p,
+.card-1-mobile-text span,
+.card-4-mobile-text span {
+  font-size: 13px;
+  color: #aaa;
+}
+
+.card-4-mobile-text p {
+  color: #555;
+}
+
+.card-3-bottom div p {
+  font-family: "Shentox", serif;
+  font-size: 13px;
+}
+
+.latest-deals h2 ~ p {
+  font-family: "ARS Maquette", sans-serif;
+  font-size: 16px;
+  color: #f42;
 }
 
 .main-grid-container p:first-child {
@@ -404,10 +541,6 @@ header a {
   margin: 36px 0 24px 0;
 }
 
-.latest-news p {
-  margin-bottom: 28px;
-}
-
 .latest-news h3 {
   font-family: "ARS Maquette-bold", serif;
   padding-right: 14px;
@@ -417,27 +550,6 @@ header a {
 
 .card-1-mobile-text p:hover {
   color: #333;
-}
-
-.card-1-mobile-text h3 a {
-  color: black;
-  text-decoration: none;
-}
-
-.card-1-mobile-text h3 a:hover {
-  color: #f42;
-  text-decoration: underline;
-}
-
-.latest-news h2 a {
-  text-decoration: none;
-  font-family: "Avalon", serif;
-  font-size: 28px;
-  color: #f42;
-}
-
-.latest-news h2 a:hover {
-  color: black;
 }
 
 .latest-news-container {
@@ -450,25 +562,15 @@ header a {
   margin-top: 90px;
 }
 
+.footer-copyright span {
+  color: #aaa;
+  font-size: 13px;
+  font-family: "ARS Maquette", sans-serif;
+}
+
 .latest-funding .card-2-bottom span {
   display: block;
   padding: 3px 0;
-}
-
-.latest-funding a {
-  text-decoration: none;
-  color: #ff4422;
-}
-
-.latest-funding h2 a {
-  text-decoration: none;
-  font-size: 28px;
-  color: #ff4422;
-  font-family: "Avalon", serif;
-}
-
-.latest-funding h2 a:hover {
-  color: black;
 }
 
 .add-info-desktop {
@@ -495,18 +597,8 @@ header a {
 .card-2-top h5 {
   color: #000;
   opacity: 0.5;
-}
-
-.card-2-middle p {
-  color: #555;
-  font-size: 13px;
-  font-family: "ARS Maquette", serif;
-  cursor: pointer;
-}
-
-.card-2-bottom p {
   font-size: 12px;
-  font-family: "ARS Maquette", serif;
+  font-family: "Shentox", sans-serif;
 }
 
 .card-2-image {
@@ -541,12 +633,7 @@ header a {
 
 .card-2-top h4 {
   font-size: 18px;
-  font-family: "Avalon";
-}
-
-.card-2-top h5 {
-  font-size: 12px;
-  font-family: "Shentox";
+  font-family: "Avalon", sans-serif;
 }
 
 .card-2-middle {
@@ -558,13 +645,13 @@ header a {
 
 .card-2-middle:first-child {
   font-size: 13px;
-  font-family: "ARS Maquette";
+  font-family: "ARS Maquette", sans-serif;
   padding-top: 10px;
 }
 
 .card-2-middle:last-child {
   font-size: 12px;
-  font-family: "ARS Maquette";
+  font-family: "ARS Maquette", sans-serif;
   padding-top: 10px;
 }
 
@@ -577,26 +664,15 @@ header a {
   cursor: pointer;
 }
 
-.card-1-mobile-text p,
-.card-1-mobile-text span,
-.card-4-mobile-text span {
-  font-size: 13px;
-  color: #aaa;
-}
-
 .card-3-effect .gray-text:hover {
   color: white;
 }
 
-.card-4-mobile-text p {
-  color: #555;
-}
-
 .card-3 {
   width: 100%;
+  padding: 2px 0;
 }
 
-.card-3 p ~ first-child,
 .card-3 h3,
 .card-3 {
   color: white;
@@ -606,10 +682,6 @@ header a {
   color: #f42;
   font-family: "Avalon", sans-serif;
   font-size: 28px;
-}
-
-.card-3 {
-  padding: 2px 0;
 }
 
 .card-3 div p:first-of-type {
@@ -629,24 +701,6 @@ header a {
   font-weight: 500;
 }
 
-.card-3 li a {
-  color: #555555;
-  font-size: 13px;
-}
-
-.card-3 li a:hover {
-  color: black;
-}
-
-.poop a {
-  color: #aaa;
-  text-decoration: none;
-}
-
-.poop a:hover {
-  color: #555;
-}
-
 .card-3 h3 {
   font-size: 20px;
   color: #fff;
@@ -654,6 +708,12 @@ header a {
   padding: 1px 0 8px;
   text-decoration: none;
   cursor: pointer;
+}
+
+.latest-deals h3 {
+  font-size: 16px;
+  font-family: "ARS Maquette-bold", sans-serif;
+  padding: 5px 0;
 }
 
 .card-3 h3:hover {
@@ -671,8 +731,7 @@ header a {
   padding: 12px;
   height: 276px;
   width: 100%;
-  background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F08%2Fcash.jpg&signature=5896ea0f7cd4543495af51a60ecf4af6"),
-    linear-gradient(transparent, rgba(0, 0, 0) 98%);
+  background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F08%2Fcash.jpg&signature=5896ea0f7cd4543495af51a60ecf4af6"), linear-gradient(transparent, rgba(0, 0, 0) 98%);
   background-blend-mode: overlay;
   background-position: top;
   background-size: cover;
@@ -684,8 +743,7 @@ header a {
   padding: 12px;
   height: 276px;
   width: 100%;
-  background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F06%2Fheader-image-macos-big-sur.png&signature=0e6babb33656a31724af31078cc91562"),
-    linear-gradient(transparent, rgba(0, 0, 0) 98%);
+  background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F06%2Fheader-image-macos-big-sur.png&signature=0e6babb33656a31724af31078cc91562"), linear-gradient(transparent, rgba(0, 0, 0) 98%);
   background-blend-mode: overlay;
   background-position: top;
   background-size: cover;
@@ -697,8 +755,7 @@ header a {
   padding: 12px;
   height: 276px;
   width: 100%;
-  background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F08%2FSnag_3663b4.png&signature=1beaa30b920774cee18cb297e34a9aaf"),
-    linear-gradient(transparent, rgba(0, 0, 0) 98%);
+  background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F08%2FSnag_3663b4.png&signature=1beaa30b920774cee18cb297e34a9aaf"), linear-gradient(transparent, rgba(0, 0, 0) 98%);
   background-blend-mode: overlay;
   background-position: top;
   background-size: cover;
@@ -710,8 +767,7 @@ header a {
   padding: 12px;
   height: 276px;
   width: 100%;
-  background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2018%2F12%2Frobot_teddybear.jpg&signature=60f2ccab334cddda800bdf334a8e99ee"),
-    linear-gradient(transparent, rgba(0, 0, 0) 98%);
+  background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2018%2F12%2Frobot_teddybear.jpg&signature=60f2ccab334cddda800bdf334a8e99ee"), linear-gradient(transparent, rgba(0, 0, 0) 98%);
   background-blend-mode: overlay;
   background-position: top;
   background-size: cover;
@@ -723,8 +779,7 @@ header a {
   padding: 12px;
   height: 276px;
   width: 100%;
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/a-female-office-worker-at-the-table-holding-papers-with-diagrams-796x531.jpg"),
-    linear-gradient(transparent, rgba(0, 0, 0) 98%);
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/a-female-office-worker-at-the-table-holding-papers-with-diagrams-796x531.jpg"), linear-gradient(transparent, rgba(0, 0, 0) 98%);
   background-blend-mode: overlay;
   background-position: top;
   background-size: cover;
@@ -736,8 +791,7 @@ header a {
   padding: 12px;
   height: 276px;
   width: 100%;
-  background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F07%2F106909103_10101777330197904_2889321509499508446_o-1.jpg&signature=c9e036a88da7384ae8e70804f7af81e0"),
-    linear-gradient(transparent, rgba(0, 0, 0) 98%);
+  background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F07%2F106909103_10101777330197904_2889321509499508446_o-1.jpg&signature=c9e036a88da7384ae8e70804f7af81e0"), linear-gradient(transparent, rgba(0, 0, 0) 98%);
   background-blend-mode: overlay;
   background-position: top;
   background-size: cover;
@@ -749,8 +803,7 @@ header a {
   padding: 12px;
   height: 276px;
   width: 100%;
-  background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F08%2Fastronautpoop.jpg&signature=dd00926d0ddc41a4e4dffbe6f9b4775a"),
-    linear-gradient(transparent, rgba(0, 0, 0) 98%);
+  background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F08%2Fastronautpoop.jpg&signature=dd00926d0ddc41a4e4dffbe6f9b4775a"), linear-gradient(transparent, rgba(0, 0, 0) 98%);
   background-blend-mode: overlay;
   background-position: top;
   background-size: cover;
@@ -762,8 +815,7 @@ header a {
   padding: 12px;
   height: 276px;
   width: 100%;
-  background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F07%2FShift-launch-cars-evs-future-polestar-electric-cars-driving-mobility.png&signature=ae628edcb255606b8d38e0e7a9a34998"),
-    linear-gradient(transparent, rgba(0, 0, 0) 98%);
+  background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F07%2FShift-launch-cars-evs-future-polestar-electric-cars-driving-mobility.png&signature=ae628edcb255606b8d38e0e7a9a34998"), linear-gradient(transparent, rgba(0, 0, 0) 98%);
   background-blend-mode: overlay;
   background-position: top;
   background-size: cover;
@@ -775,8 +827,7 @@ header a {
   padding: 12px;
   height: 276px;
   width: 100%;
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/08/Mulan-796x417.jpg"),
-    linear-gradient(transparent, rgba(0, 0, 0) 98%);
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/08/Mulan-796x417.jpg"), linear-gradient(transparent, rgba(0, 0, 0) 98%);
   background-blend-mode: overlay;
   background-position: top;
   background-size: cover;
@@ -794,41 +845,17 @@ header a {
   padding: 7px 0 1px;
 }
 
-.card-3-bottom div p {
-  font-family: "Shentox", serif;
-  font-size: 13px;
+.card-4-discount h4 {
+  transform: rotate(45deg);
+  font-size: 14px;
+  position: absolute;
+  top: 20px;
+  right: 0;
 }
 
 .card-3-bottom div h4 {
   font-family: "ARS Maquette-bold", serif;
   font-size: 14px;
-}
-
-.card-3 a:last-child {
-  text-decoration: none;
-  color: #aaa;
-}
-
-.card-3 h2 a:first-child {
-  font-family: "Avalon", sans-serif;
-  font-size: 28px;
-  text-decoration: none;
-  color: #f42;
-  line-height: 30.8px;
-  letter-spacing: -0.42px;
-}
-
-.card-3 h2 a:first-child:hover {
-  font-family: "Avalon", serif;
-  font-size: 28px;
-  text-decoration: none;
-  color: black;
-}
-
-.card-3 li {
-  list-style: none;
-  border-bottom: 1px solid #eee;
-  padding: 6px 0;
 }
 
 .card-3 li::before {
@@ -858,29 +885,6 @@ header a {
   grid-gap: 24px;
   margin-top: 12px;
   padding-bottom: 88px;
-}
-
-.latest-deals h2 a {
-  font-family: "Avalon", serif;
-  font-size: 28px;
-  text-decoration: none;
-  color: #f42;
-}
-
-.latest-deals h2 a:hover {
-  color: black;
-}
-
-.latest-deals h2 ~ p {
-  font-family: "ARS Maquette", serif;
-  font-size: 16px;
-  color: #f42;
-}
-
-.latest-deals h3 {
-  font-size: 16px;
-  font-family: "ARS Maquette-bold", sans-serif;
-  padding: 5px 0;
 }
 
 .card-4 {
@@ -916,14 +920,6 @@ header a {
   background-repeat: no-repeat;
 }
 
-.card-4-discount h4 {
-  transform: rotate(45deg);
-  font-size: 14px;
-  position: absolute;
-  top: 20px;
-  right: 0;
-}
-
 /* Footer Section */
 
 .footer-links {
@@ -938,29 +934,11 @@ header a {
   margin-top: -20px;
   display: flex;
   list-style: none;
-  display: flex;
   justify-content: center;
-}
-
-.footer-links-social a {
-  background-color: #333;
-  padding: 12px;
-  border-radius: 50%;
-  margin: 10px;
-  display: flex;
 }
 
 .footer-links-social svg {
   filter: invert(1);
-}
-
-.footer-links-social li a {
-  border: transparent 1px solid;
-}
-
-.footer-links-social li a:hover {
-  background-color: #131313;
-  border: 1px solid #555;
 }
 
 .footer-links-social svg:hover {
@@ -975,18 +953,6 @@ header a {
   margin: 20px 6px;
 }
 
-.footer-links-menu a {
-  color: #aaa;
-  margin: 20px 6px;
-  text-decoration: none;
-  font-size: 12px;
-  font-family: "Shentox", serif;
-}
-
-.footer-links-menu a:hover {
-  color: white;
-}
-
 .footer-copyright {
   display: flex;
   justify-content: center;
@@ -995,12 +961,6 @@ header a {
   width: 100%;
   height: 97px;
   color: white;
-}
-
-.footer-copyright span {
-  color: #aaa;
-  font-size: 13px;
-  font-family: "ARS Maquette", serif;
 }
 
 .footer-copyright img {
@@ -1070,6 +1030,10 @@ header a {
     grid-area: main-image-3;
   }
 
+  .add-info-desktop a {
+    margin: 7px 0;
+  }
+
   .latest-news h2 a {
     margin-left: 0;
   }
@@ -1093,10 +1057,12 @@ header a {
 
   .card-4 {
     margin-top: 20px;
+    width: 100%;
   }
 
   .card-4 img {
     height: 234px;
+    width: 100%;
   }
 
   .card-2-container {
@@ -1107,10 +1073,6 @@ header a {
 
   .card-2:last-child {
     display: none;
-  }
-
-  .add-info-desktop a {
-    margin: 7px 0;
   }
 
   .add-info-desktop {
@@ -1124,9 +1086,9 @@ header a {
 
   .latest-funding h2 {
     font-size: 28px;
-    color: #ff4422;
+    color: #f42;
     margin-top: -26px;
-    font-family: "Avalon", serif;
+    font-family: "Avalon", sans-serif;
   }
 
   .latest-funding-tablet div {
@@ -1201,14 +1163,6 @@ header a {
     grid-gap: 10px;
     margin-top: 12px;
     padding-bottom: 88px;
-  }
-
-  .card-4 {
-    width: 100%;
-  }
-
-  .card-4 img {
-    width: 100%;
   }
 
   .card-4-discount-container {
@@ -1305,7 +1259,7 @@ header a {
   }
 
   .mobile-ff {
-    font-family: "Shentox";
+    font-family: "Shentox", sans-serif;
   }
 
   .image-2-mobile {
@@ -1372,16 +1326,19 @@ header a {
 
   .card-1-mobile-text h3 {
     font-size: 14px;
-    font-family: "ARS Maquette";
+    font-family: "ARS Maquette", sans-serif;
   }
 
   .card-1-mobile-text p {
-    font-family: "ARS Maquette";
+    font-family: "ARS Maquette", sans-serif;
     font-size: 12px;
   }
 
   .latest-funding h2 {
-    font-family: "Avalon", serif;
+    font-family: "Avalon", sans-serif;
+    font-size: 28px;
+    color: #f42;
+    margin-top: -10px;
   }
 
   .card-4-mobile-text h3 {
@@ -1425,7 +1382,7 @@ header a {
   .latest-funding {
     margin-top: 64px;
     font-size: 14px;
-    font-family: "ARS Maquette";
+    font-family: "ARS Maquette", sans-serif;
   }
 
   .add-info-desktop {
@@ -1434,7 +1391,7 @@ header a {
 
   .add-info-desktop a {
     font-size: 14px;
-    font-family: "ARS Maquette";
+    font-family: "ARS Maquette", sans-serif;
   }
 
   .card-2-middle {
@@ -1443,12 +1400,6 @@ header a {
 
   .card-2-bottom {
     font-size: 12px;
-  }
-
-  .latest-funding h2 {
-    font-size: 28px;
-    color: #ff4422;
-    margin-top: -10px;
   }
 
   .latest-funding-mobile {
@@ -1474,17 +1425,27 @@ header a {
 
   .card-3 h2 {
     font-size: 28px;
-    font-family: "Avalon", serif;
+    font-family: "Avalon", sans-serif;
+  }
+
+  .card-4-mobile-text p {
+    font-size: 14px;
+    font-family: "ARS Maquette", sans-serif;
+  }
+
+  .main-grid-container p {
+    font-size: 12px;
+    font-family: "ARS Maquette", sans-serif;
   }
 
   .card-3 p:first-child {
     font-size: 14px;
-    font-family: "ARS Maquette", serif;
+    font-family: "ARS Maquette", sans-serif;
   }
 
   .card-3 h3 {
     font-size: 20px;
-    font-family: "ARS Maquette", serif;
+    font-family: "ARS Maquette", sans-serif;
   }
 
   .card-3 .gray-text {
@@ -1493,7 +1454,7 @@ header a {
 
   .card-3 li a {
     font-size: 13px;
-    font-family: "ARS Maquatte";
+    font-family: "ARS Maquette", sans-serif;
   }
 
   .latest-deals {
@@ -1502,7 +1463,7 @@ header a {
   }
 
   .latest-deals h3 {
-    font-family: "ARS Maquette", serif;
+    font-family: "ARS Maquette", sans-serif;
   }
 
   .latest-deals-container {
@@ -1518,18 +1479,9 @@ header a {
     border-right: none;
   }
 
-  .card-4 {
-    margin-top: 0;
-  }
-
   .card-4-mobile-text .strikethrough {
     font-size: 12px;
-    font-family: "ARS Maquette", serif;
-  }
-
-  .card-4-mobile-text p {
-    font-size: 14px;
-    font-family: "ARS Maquette", serif;
+    font-family: "ARS Maquette", sans-serif;
   }
 
   .card-4-discount {
@@ -1538,11 +1490,6 @@ header a {
 
   .footer-copyright {
     flex-wrap: wrap;
-  }
-
-  .main-grid-container p {
-    font-size: 12px;
-    font-family: "ARS Maquette", serif;
   }
 
   .main-grid-container h2 {
