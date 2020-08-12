@@ -1,0 +1,1566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="assets/font/stylesheet.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <title>The Next Web</title>
+  </head>
+  <body>
+    <header>
+      <img
+        class="tablet-tnw-logo"
+        src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg"
+        alt="tnw-logo"
+      />
+      <div class="search-icon-mobile">
+        <svg
+          class="logo-dl"
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="-7.5 992.5 16 16"
+          x="832"
+          y="832"
+        >
+          <path
+            fill="#AAA"
+            d="M-2.883 994.449c1.299-1.3 2.871-1.949 4.716-1.949 1.845 0 3.418.649 4.717 1.949 1.301 1.301 1.95 2.871 1.95 4.716s-.649 3.416-1.95 4.715c-1.299 1.301-2.872 1.952-4.717 1.952-.978 0-1.9-.201-2.765-.602l-4.018 2.95c-.356.266-.75.367-1.184.299a1.564 1.564 0 0 1-1.05-.633c-.212-.288-.316-.608-.316-.958s.104-.67.316-.957l2.95-4c-.4-.866-.6-1.788-.6-2.767.001-1.844.652-3.414 1.951-4.715zm1.416 8.014c.912.913 2.012 1.369 3.3 1.369 1.289 0 2.389-.456 3.3-1.369.911-.907 1.366-2.008 1.366-3.298 0-1.287-.455-2.389-1.366-3.301-.911-.909-2.011-1.364-3.3-1.364-1.289 0-2.389.455-3.3 1.364-.911.912-1.366 2.014-1.366 3.301 0 1.29.455 2.391 1.366 3.298z"
+          />
+        </svg>
+      </div>
+
+      <img
+        class="hamburger-icon-mobile"
+        src="assets/hamburger-menu.png"
+        width="20"
+        height="20"
+        alt="hamburger-menu-icon"
+      />
+
+      <nav id="first-nav" class="flex space-between">
+        <ul class="flex smaller align-items-center">
+          <li><a href="#">News</a></li>
+          <li>
+            <a href="#"
+              >Events <i class="fas fa-caret-down" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              >Business <i class="fas fa-caret-down" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li><a href="#">AMAs</a></li>
+          <li><a href="#">Spaces</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+        <ul class="flex smaller align-items-center about-nav">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Advertise</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <nav id="second-nav" class="flex space-between small">
+        <ul class="flex gray-text align-items-center uppercase">
+          <li>
+            <a href="#">latest</a>
+          </li>
+          <li>
+            <a href="#hard-fork">hard fork</a>
+          </li>
+          <li>
+            <a href="#">plugged</a>
+          </li>
+          <li>
+            <a href="#">readme</a>
+          </li>
+          <li>
+            <a href="#">growth quarters</a>
+          </li>
+          <li>
+            <a href="#">neural</a>
+          </li>
+        </ul>
+        <div class="search-icon">
+          <svg
+            class="logo-dl"
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="-7.5 992.5 16 16"
+            id="search"
+            x="832"
+            y="832"
+          >
+            <path
+              fill="#AAA"
+              d="M-2.883 994.449c1.299-1.3 2.871-1.949 4.716-1.949 1.845 0 3.418.649 4.717 1.949 1.301 1.301 1.95 2.871 1.95 4.716s-.649 3.416-1.95 4.715c-1.299 1.301-2.872 1.952-4.717 1.952-.978 0-1.9-.201-2.765-.602l-4.018 2.95c-.356.266-.75.367-1.184.299a1.564 1.564 0 0 1-1.05-.633c-.212-.288-.316-.608-.316-.958s.104-.67.316-.957l2.95-4c-.4-.866-.6-1.788-.6-2.767.001-1.844.652-3.414 1.951-4.715zm1.416 8.014c.912.913 2.012 1.369 3.3 1.369 1.289 0 2.389-.456 3.3-1.369.911-.907 1.366-2.008 1.366-3.298 0-1.287-.455-2.389-1.366-3.301-.911-.909-2.011-1.364-3.3-1.364-1.289 0-2.389.455-3.3 1.364-.911.912-1.366 2.014-1.366 3.301 0 1.29.455 2.391 1.366 3.298z"
+            />
+          </svg>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="main-grid-container">
+        <div class="main-image-1 image-1-mobile flex flex-column space-between">
+          <div class="flex">
+            <img
+              id="desktop-white-logo"
+              src="assets/tnw-logo.png"
+              width="580"
+              height="180"
+              alt="tnw-transparent"
+            />
+            <div class="desktop-date">Friday — August 7, 2020</div>
+          </div>
+
+          <div>
+            <p class="small uppercase mobile-ff">insights</p>
+            <h1>
+              Satoshi Nakaboto: ‘Bitcoin is now worth as much as Coca-Cola’
+            </h1>
+            <p>
+              by <span>Matthew Beedham</span>
+              <i
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="-7.5 992.5 16 16"
+                  class="clock-dark"
+                  x="144"
+                  y="144"
+                >
+                  <path
+                    d="M-3.508 993.575C-2.28 992.858-.944 992.5.5 992.5s2.78.358 4.008 1.075a7.982 7.982 0 0 1 2.917 2.916c.717 1.229 1.075 2.564 1.075 4.009s-.358 2.78-1.075 4.009a7.975 7.975 0 0 1-2.917 2.916c-1.228.717-2.564 1.075-4.008 1.075s-2.781-.358-4.008-1.075a7.982 7.982 0 0 1-2.917-2.916c-.717-1.229-1.075-2.564-1.075-4.009s.358-2.78 1.075-4.009a7.99 7.99 0 0 1 2.917-2.916zM-3.7 1004.7c1.178 1.178 2.578 1.767 4.2 1.767 1.622 0 3.022-.589 4.2-1.767 1.177-1.178 1.767-2.578 1.767-4.2s-.59-3.022-1.767-4.2c-1.178-1.178-2.578-1.767-4.2-1.767-1.623 0-3.022.589-4.2 1.767s-1.767 2.578-1.767 4.2.589 3.022 1.767 4.2zm7.267-1.066a.84.84 0 0 1-.592.232.84.84 0 0 1-.592-.232l-2.633-2.101c-.233-.211-.339-.461-.317-.75l.184-4.233a.866.866 0 0 1 .283-.616.834.834 0 0 1 .633-.233c.233.011.431.1.592.267s.247.361.258.583l.167 3.783 2.067 2.033a.85.85 0 0 1 .233.643.88.88 0 0 1-.283.624z"
+                  />
+                </svg>
+              </i>
+              <span>3 hours ago</span> <i class="fas fa-share-alt"></i>35
+            </p>
+          </div>
+        </div>
+
+        <div class="main-image-2 image-2-mobile flex flex-column flex-end">
+          <p class="small uppercase mobile-ff">tech</p>
+          <h2>
+            Microsoft reportedly wants to buy up TikTok’s India operations too
+          </h2>
+          <p>
+            by <span>Ivan Mehta</span>
+            <i
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="-7.5 992.5 16 16"
+                class="clock-dark"
+                x="144"
+                y="144"
+              >
+                <path
+                  d="M-3.508 993.575C-2.28 992.858-.944 992.5.5 992.5s2.78.358 4.008 1.075a7.982 7.982 0 0 1 2.917 2.916c.717 1.229 1.075 2.564 1.075 4.009s-.358 2.78-1.075 4.009a7.975 7.975 0 0 1-2.917 2.916c-1.228.717-2.564 1.075-4.008 1.075s-2.781-.358-4.008-1.075a7.982 7.982 0 0 1-2.917-2.916c-.717-1.229-1.075-2.564-1.075-4.009s.358-2.78 1.075-4.009a7.99 7.99 0 0 1 2.917-2.916zM-3.7 1004.7c1.178 1.178 2.578 1.767 4.2 1.767 1.622 0 3.022-.589 4.2-1.767 1.177-1.178 1.767-2.578 1.767-4.2s-.59-3.022-1.767-4.2c-1.178-1.178-2.578-1.767-4.2-1.767-1.623 0-3.022.589-4.2 1.767s-1.767 2.578-1.767 4.2.589 3.022 1.767 4.2zm7.267-1.066a.84.84 0 0 1-.592.232.84.84 0 0 1-.592-.232l-2.633-2.101c-.233-.211-.339-.461-.317-.75l.184-4.233a.866.866 0 0 1 .283-.616.834.834 0 0 1 .633-.233c.233.011.431.1.592.267s.247.361.258.583l.167 3.783 2.067 2.033a.85.85 0 0 1 .233.643.88.88 0 0 1-.283.624z"
+                />
+              </svg>
+            </i>
+            <span>1 hour ago</span> <i class="fas fa-share-alt"></i>10
+          </p>
+        </div>
+
+        <div class="main-image-3 image-3-mobile flex flex-column flex-end">
+          <p class="small uppercase mobile-ff">gear</p>
+          <h2>
+            Just putting it out there: Wireless charging is for chumps — and the
+            data proves it
+          </h2>
+          <p>
+            by <span>Mix</span>
+            <i
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="-7.5 992.5 16 16"
+                class="clock-dark"
+                x="144"
+                y="144"
+              >
+                <path
+                  d="M-3.508 993.575C-2.28 992.858-.944 992.5.5 992.5s2.78.358 4.008 1.075a7.982 7.982 0 0 1 2.917 2.916c.717 1.229 1.075 2.564 1.075 4.009s-.358 2.78-1.075 4.009a7.975 7.975 0 0 1-2.917 2.916c-1.228.717-2.564 1.075-4.008 1.075s-2.781-.358-4.008-1.075a7.982 7.982 0 0 1-2.917-2.916c-.717-1.229-1.075-2.564-1.075-4.009s.358-2.78 1.075-4.009a7.99 7.99 0 0 1 2.917-2.916zM-3.7 1004.7c1.178 1.178 2.578 1.767 4.2 1.767 1.622 0 3.022-.589 4.2-1.767 1.177-1.178 1.767-2.578 1.767-4.2s-.59-3.022-1.767-4.2c-1.178-1.178-2.578-1.767-4.2-1.767-1.623 0-3.022.589-4.2 1.767s-1.767 2.578-1.767 4.2.589 3.022 1.767 4.2zm7.267-1.066a.84.84 0 0 1-.592.232.84.84 0 0 1-.592-.232l-2.633-2.101c-.233-.211-.339-.461-.317-.75l.184-4.233a.866.866 0 0 1 .283-.616.834.834 0 0 1 .633-.233c.233.011.431.1.592.267s.247.361.258.583l.167 3.783 2.067 2.033a.85.85 0 0 1 .233.643.88.88 0 0 1-.283.624z"
+                />
+              </svg>
+            </i>
+            <span>3 hours ago</span> <i class="fas fa-share-alt"></i>35
+          </p>
+        </div>
+      </div>
+
+      <div class="main-wrapper">
+        <section class="latest-news">
+          <div class="latest-news-hover">
+            <h2>
+              <a href="#"
+                >Latest news
+                <i class="fas fa-chevron-right fa-xs" aria-hidden="true"></i>
+              </a>
+            </h2>
+          </div>
+
+          <div class="grid latest-news-container">
+            <article class="card-1">
+              <a href="#">
+                <img
+                  src="assets/main-image-2.jpg"
+                  height="135"
+                  alt="article image"
+                />
+              </a>
+              <div class="card-1-mobile-text">
+                <h3>
+                  <a href="#">
+                    5 things to consider when you run an internship program
+                  </a>
+                </h3>
+                <p>.cuit .<span> 3 hours ago</span></p>
+              </div>
+            </article>
+
+            <article class="card-1">
+              <a href="#">
+                <img
+                  src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/08/Untitled-design-2020-08-06T153931.140-516x270.png"
+                  height="135"
+                  alt="article image"
+                />
+              </a>
+              <div class="card-1-mobile-text">
+                <h3>
+                  <a href="#">
+                    Study: Instagram’s algorithm favored Trump over Biden
+                  </a>
+                </h3>
+                <p>Thomas Macaulay <span>. 44 minutes ago</span></p>
+              </div>
+            </article>
+
+            <article class="card-1">
+              <a href="#">
+                <img
+                  src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/08/tesla-wrap-custom-car-paint-boring-xzibit-future-3m-480x270.jpg"
+                  height="135"
+                  alt="article image"
+                />
+              </a>
+              <div class="card-1-mobile-text">
+                <h3>
+                  <a href="#">
+                    Tesla launches car wrapping service because its colors are
+                    boring AF
+                  </a>
+                </h3>
+                <p>Matthew Beedham <span>. 3 hours ago</span></p>
+              </div>
+            </article>
+
+            <article class="card-1">
+              <a href="#">
+                <img
+                  src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/08/Untitled-design-2020-08-06T132026.932-516x270.png"
+                  height="135"
+                  alt="article image"
+                />
+              </a>
+              <div class="card-1-mobile-text">
+                <h3>
+                  <a href="#">
+                    Depictions of AI are overwhelmingly white -- and that’s a
+                    serious problem
+                  </a>
+                </h3>
+                <p>Thomas Macaulay <span>. 3 hours ago</span></p>
+              </div>
+            </article>
+
+            <article class="card-1">
+              <a href="#">
+                <img
+                  src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/glenn-carstens-peters-npxXWgQ33ZQ-unsplash-540x270.jpg"
+                  height="135"
+                  alt="article image"
+                />
+              </a>
+              <div class="card-1-mobile-text">
+                <h3>
+                  <a href="#">
+                    Get over 80 marketing WordPress plugins, all here in one
+                    massive bundle
+                  </a>
+                </h3>
+                <p>TNW Deals <span>. 5 hours ago</span></p>
+              </div>
+            </article>
+
+            <article class="card-1">
+              <a href="#">
+                <img
+                  src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/08/astronautpoop-480x270.jpg"
+                  height="135"
+                  alt="article image"
+                />
+              </a>
+              <div class="card-1-mobile-text">
+                <h3>
+                  <a href="#">
+                    Bezos just took his first post-COVID (stock) dump — and it’s
+                    worth $3.1B
+                  </a>
+                </h3>
+                <p>David Canellis <span>. 5 hours ago</span></p>
+              </div>
+            </article>
+
+            <article class="card-1">
+              <a href="#">
+                <img
+                  src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/google-pixel-photography-street-516x270.jpg"
+                  height="135"
+                  alt="article image"
+                />
+              </a>
+              <div class="card-1-mobile-text">
+                <h3>
+                  <a href="#">
+                    Google discontinues the Pixel 4 and 4XL — and that’s a good
+                    thing
+                  </a>
+                </h3>
+                <p>Mix <span>. 5 hours ago</span></p>
+              </div>
+            </article>
+
+            <article class="card-1">
+              <a href="#">
+                <img
+                  src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/TikTok-USA-hed-513x270.jpg"
+                  height="135"
+                  alt="article image"
+                />
+              </a>
+              <div class="card-1-mobile-text">
+                <h3>
+                  <a href="#">
+                    Why Elon Musk is wrong about Level 5 self-driving cars
+                  </a>
+                </h3>
+                <p>Ben Dickson <span>. 6 hours ago</span></p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="latest-funding">
+          <div
+            class="flex space-between latest-funding-tablet latest-funding-mobile align-items-baseline"
+          >
+            <h2 class="flex">
+              <a href="#">
+                Latest funding rounds on Index.co
+                <i class="fas fa-chevron-right fa-xs" aria-hidden="true"></i>
+              </a>
+            </h2>
+            <div class="add-info-desktop">
+              <a href="#">&nbsp; Add info &nbsp;</a>
+              <a class="border" href="#">
+                &nbsp; <span>Get updates by email</span> &nbsp;
+              </a>
+              <a href="#">&nbsp; See more &nbsp;</a>
+            </div>
+          </div>
+
+          <div class="card-2-container">
+            <div class="card-2">
+              <div>
+                <img
+                  class="card-2-image"
+                  src="https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1251080954996830208%2F_GLClmxn.png&signature=4ac535626dbf3c9773e5594722c31dfd"
+                  alt=""
+                />
+                <div class="card-2-top">
+                  <div class="masterd-background">
+                    <h3>MasterD Oposicio</h3>
+                  </div>
+                  <div class="undisclosed-amount">
+                    <h4>Undisclosed amount</h4>
+                    <h5 class="uppercase">undisclosed</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="card-2-middle">
+                <p>
+                  <i
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="656.5 1056.5 16 16"
+                      class="tag-dark"
+                      x="976"
+                      y="976"
+                    >
+                      <path
+                        d="M661.231 1059.879c0-.373-.132-.691-.396-.955-.264-.265-.583-.396-.956-.396s-.692.132-.956.396a1.301 1.301 0 0 0-.396.955c0 .374.132.692.396.956s.583.396.956.396.691-.132.956-.396.396-.582.396-.956zm11.269 6.083c0 .374-.13.69-.391.951l-5.186 5.195a1.35 1.35 0 0 1-.961.392c-.373 0-.69-.131-.95-.392l-7.551-7.562c-.268-.26-.495-.615-.681-1.066-.187-.45-.28-.862-.28-1.235v-4.394a1.3 1.3 0 0 1 .401-.95c.268-.268.584-.401.951-.401h4.394c.373 0 .785.093 1.235.279.451.188.81.414 1.077.682l7.551 7.541c.261.274.391.595.391.96z"
+                      />
+                    </svg>
+                  </i>
+                  &nbsp; Education
+                </p>
+                <p>
+                  <i
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="-239.5 160.5 16 16"
+                      class="briefcase-dark"
+                      x="48"
+                      y="48"
+                    >
+                      <path
+                        d="M-233.786 163.833h4.571v-1.166h-4.571v1.166zm10.286 5.833v4.374c0 .402-.141.744-.42 1.03-.28.285-.616.43-1.009.43h-13.144c-.393 0-.729-.145-1.009-.43s-.419-.628-.419-1.03v-4.374h6v1.459c0 .158.056.293.169.409a.545.545 0 0 0 .402.173h2.855a.545.545 0 0 0 .402-.173.565.565 0 0 0 .17-.409v-1.459h6.003zm-6.857 0v1.167h-2.285v-1.167h2.285zm6.857-4.373v3.498h-16v-3.498c0-.403.14-.745.419-1.032.28-.284.616-.429 1.009-.429h3.144v-1.457c0-.243.083-.449.25-.62a.822.822 0 0 1 .606-.255h5.144c.237 0 .439.086.606.255a.857.857 0 0 1 .249.62v1.457h3.145c.393 0 .729.145 1.009.429.278.287.419.63.419 1.032z"
+                      />
+                    </svg>
+                  </i>
+                  &nbsp; KKR
+                </p>
+              </div>
+              <div class="card-2-bottom">
+                <p>
+                  MasterD Receives Investment from KKR
+                  <span class="light-gray-text"> on FinSMEs</span>
+                </p>
+              </div>
+            </div>
+            <div class="card-2">
+              <div>
+                <img
+                  class="card-2-image"
+                  src="https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1058089378059153408%2Fh3Id0F0D.jpg&signature=8db01d2989b3c4249097472521db4d3e"
+                  alt=""
+                />
+                <div class="card-2-top">
+                  <div class="masterd-background">
+                    <h3>Dapper Labs</h3>
+                  </div>
+                  <div class="undisclosed-amount">
+                    <h4>$12M</h4>
+                    <h5 class="uppercase">venture capital</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="card-2-middle">
+                <p>
+                  <i
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="656.5 1056.5 16 16"
+                      class="tag-dark"
+                      x="976"
+                      y="976"
+                    >
+                      <path
+                        d="M661.231 1059.879c0-.373-.132-.691-.396-.955-.264-.265-.583-.396-.956-.396s-.692.132-.956.396a1.301 1.301 0 0 0-.396.955c0 .374.132.692.396.956s.583.396.956.396.691-.132.956-.396.396-.582.396-.956zm11.269 6.083c0 .374-.13.69-.391.951l-5.186 5.195a1.35 1.35 0 0 1-.961.392c-.373 0-.69-.131-.95-.392l-7.551-7.562c-.268-.26-.495-.615-.681-1.066-.187-.45-.28-.862-.28-1.235v-4.394a1.3 1.3 0 0 1 .401-.95c.268-.268.584-.401.951-.401h4.394c.373 0 .785.093 1.235.279.451.188.81.414 1.077.682l7.551 7.541c.261.274.391.595.391.96z"
+                      />
+                    </svg>
+                  </i>
+                  &nbsp; Games, +2
+                </p>
+                <p>
+                  <i
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="-239.5 160.5 16 16"
+                      class="briefcase-dark"
+                      x="48"
+                      y="48"
+                    >
+                      <path
+                        d="M-233.786 163.833h4.571v-1.166h-4.571v1.166zm10.286 5.833v4.374c0 .402-.141.744-.42 1.03-.28.285-.616.43-1.009.43h-13.144c-.393 0-.729-.145-1.009-.43s-.419-.628-.419-1.03v-4.374h6v1.459c0 .158.056.293.169.409a.545.545 0 0 0 .402.173h2.855a.545.545 0 0 0 .402-.173.565.565 0 0 0 .17-.409v-1.459h6.003zm-6.857 0v1.167h-2.285v-1.167h2.285zm6.857-4.373v3.498h-16v-3.498c0-.403.14-.745.419-1.032.28-.284.616-.429 1.009-.429h3.144v-1.457c0-.243.083-.449.25-.62a.822.822 0 0 1 .606-.255h5.144c.237 0 .439.086.606.255a.857.857 0 0 1 .249.62v1.457h3.145c.393 0 .729.145 1.009.429.278.287.419.63.419 1.032z"
+                      />
+                    </svg>
+                  </i>
+                  &nbsp; Spencer Dinwiddie, +6
+                </p>
+              </div>
+              <div class="card-2-bottom">
+                <p>
+                  Dapper Labs Raises $12M From VC Firms and NBA Players, Nets
+                  $1.2M in NFT Sales
+                  <span class="light-gray-text">on Cointelegraph</span>
+                </p>
+              </div>
+            </div>
+            <div class="card-2">
+              <div>
+                <img
+                  class="card-2-image"
+                  src="https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1194332652305833984%2FW5I1iiWi.png&signature=560cf1f63aeeb8ff8f483aa225879e78"
+                  alt=""
+                />
+                <div class="card-2-top">
+                  <div class="masterd-background">
+                    <h3>Crossbeam</h3>
+                  </div>
+                  <div class="undisclosed-amount">
+                    <h4>$25M</h4>
+                    <h5 class="uppercase">series b</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="card-2-middle">
+                <p>
+                  <i
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="656.5 1056.5 16 16"
+                      class="tag-dark"
+                      x="976"
+                      y="976"
+                    >
+                      <path
+                        d="M661.231 1059.879c0-.373-.132-.691-.396-.955-.264-.265-.583-.396-.956-.396s-.692.132-.956.396a1.301 1.301 0 0 0-.396.955c0 .374.132.692.396.956s.583.396.956.396.691-.132.956-.396.396-.582.396-.956zm11.269 6.083c0 .374-.13.69-.391.951l-5.186 5.195a1.35 1.35 0 0 1-.961.392c-.373 0-.69-.131-.95-.392l-7.551-7.562c-.268-.26-.495-.615-.681-1.066-.187-.45-.28-.862-.28-1.235v-4.394a1.3 1.3 0 0 1 .401-.95c.268-.268.584-.401.951-.401h4.394c.373 0 .785.093 1.235.279.451.188.81.414 1.077.682l7.551 7.541c.261.274.391.595.391.96z"
+                      />
+                    </svg>
+                  </i>
+                  &nbsp; Saas, +2
+                </p>
+                <p>
+                  <i
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="-239.5 160.5 16 16"
+                      class="briefcase-dark"
+                      x="48"
+                      y="48"
+                    >
+                      <path
+                        d="M-233.786 163.833h4.571v-1.166h-4.571v1.166zm10.286 5.833v4.374c0 .402-.141.744-.42 1.03-.28.285-.616.43-1.009.43h-13.144c-.393 0-.729-.145-1.009-.43s-.419-.628-.419-1.03v-4.374h6v1.459c0 .158.056.293.169.409a.545.545 0 0 0 .402.173h2.855a.545.545 0 0 0 .402-.173.565.565 0 0 0 .17-.409v-1.459h6.003zm-6.857 0v1.167h-2.285v-1.167h2.285zm6.857-4.373v3.498h-16v-3.498c0-.403.14-.745.419-1.032.28-.284.616-.429 1.009-.429h3.144v-1.457c0-.243.083-.449.25-.62a.822.822 0 0 1 .606-.255h5.144c.237 0 .439.086.606.255a.857.857 0 0 1 .249.62v1.457h3.145c.393 0 .729.145 1.009.429.278.287.419.63.419 1.032z"
+                      />
+                    </svg>
+                  </i>
+                  &nbsp; FirstMark Capital, +6
+                </p>
+              </div>
+              <div class="card-2-bottom">
+                <p>
+                  Crossbeam announces $25M Series B to keep growing partnerships
+                  platform <span class="light-gray-text"> on TechCrunch</span>
+                </p>
+              </div>
+            </div>
+            <div class="card-2">
+              <div>
+                <img
+                  class="card-2-image"
+                  src="https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1168860376848654337%2FVv8GfAxF.jpg&signature=bf09bf06aba16b0e0403b31c5c8dce6a"
+                  alt=""
+                />
+                <div class="card-2-top">
+                  <div class="masterd-background">
+                    <h3>PPRO</h3>
+                  </div>
+                  <div class="undisclosed-amount">
+                    <h4>$50M</h4>
+                    <h5 class="uppercase">venture capital</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="card-2-middle">
+                <p>
+                  <i
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="656.5 1056.5 16 16"
+                      class="tag-dark"
+                      x="976"
+                      y="976"
+                    >
+                      <path
+                        d="M661.231 1059.879c0-.373-.132-.691-.396-.955-.264-.265-.583-.396-.956-.396s-.692.132-.956.396a1.301 1.301 0 0 0-.396.955c0 .374.132.692.396.956s.583.396.956.396.691-.132.956-.396.396-.582.396-.956zm11.269 6.083c0 .374-.13.69-.391.951l-5.186 5.195a1.35 1.35 0 0 1-.961.392c-.373 0-.69-.131-.95-.392l-7.551-7.562c-.268-.26-.495-.615-.681-1.066-.187-.45-.28-.862-.28-1.235v-4.394a1.3 1.3 0 0 1 .401-.95c.268-.268.584-.401.951-.401h4.394c.373 0 .785.093 1.235.279.451.188.81.414 1.077.682l7.551 7.541c.261.274.391.595.391.96z"
+                      />
+                    </svg>
+                  </i>
+                  &nbsp; Payments
+                </p>
+                <p>
+                  <i
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="-239.5 160.5 16 16"
+                      class="briefcase-dark"
+                      x="48"
+                      y="48"
+                    >
+                      <path
+                        d="M-233.786 163.833h4.571v-1.166h-4.571v1.166zm10.286 5.833v4.374c0 .402-.141.744-.42 1.03-.28.285-.616.43-1.009.43h-13.144c-.393 0-.729-.145-1.009-.43s-.419-.628-.419-1.03v-4.374h6v1.459c0 .158.056.293.169.409a.545.545 0 0 0 .402.173h2.855a.545.545 0 0 0 .402-.173.565.565 0 0 0 .17-.409v-1.459h6.003zm-6.857 0v1.167h-2.285v-1.167h2.285zm6.857-4.373v3.498h-16v-3.498c0-.403.14-.745.419-1.032.28-.284.616-.429 1.009-.429h3.144v-1.457c0-.243.083-.449.25-.62a.822.822 0 0 1 .606-.255h5.144c.237 0 .439.086.606.255a.857.857 0 0 1 .249.62v1.457h3.145c.393 0 .729.145 1.009.429.278.287.419.63.419 1.032z"
+                      />
+                    </svg>
+                  </i>
+                  &nbsp; Citi Ventures +2
+                </p>
+              </div>
+              <div class="card-2-bottom">
+                <p>
+                  In brief: PPRO raises US$50M; ShopBack launches in Vietnam |
+                  e27
+                  <span class="light-gray-text"> on e27: Asia tech news</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="grid-container-2 grid">
+          <article class="card-3">
+            <h2>
+              <a id="hard-fork" href="#">
+                Hard Fork
+                <i class="fas fa-chevron-right fa-xs" aria-hidden="true"></i>
+              </a>
+            </h2>
+            <div class="card-3-content-1 flex flex-column flex-end">
+              <p class="uppercase">most popular</p>
+              <h3>
+                NASDAQ 100 sits on nearly $1T in cash — and we’ve got the charts
+                to prove it
+              </h3>
+              <p>David Canellis . 4 hours ago</p>
+            </div>
+            <div class="card-3-bottom flex space-between">
+              <div class="flex flex-column">
+                <p class="uppercase">Latest</p>
+
+                <h4>
+                  Bezos just took his first post-COVID (stock) dump — and it’s
+                  worth $3.1B
+                </h4>
+              </div>
+
+              <img
+                class="card-3-image"
+                src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/08/astronautpoop.jpg"
+                alt="logo"
+              />
+            </div>
+            <div>
+              <ul>
+                <li>
+                  <a href="#">
+                    Satoshi Nakaboto: ‘Young investors go for Bitcoin, older
+                    ones prefer gold, JPMorgan reports’
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Satoshi Nakaboto: ‘There are now nearly 9,000 Bitcoin ATMs
+                    worldwide’
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Bitfinex offers $400M reward for return of $1.3B in stolen
+                    Bitcoin
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Alphabet raises $10B with the biggest, cheapest bond sale in
+                    its history
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Satoshi Nakaboto: ‘Twitter hacker who owns 300 Bitcoins has
+                    bail set for $725K’
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card-3">
+            <h2>
+              <a href="#">
+                Apps
+                <i class="fas fa-chevron-right fa-xs" aria-hidden="true"></i>
+              </a>
+            </h2>
+            <div class="card-3-content-2 flex flex-column flex-end">
+              <p class="uppercase">most popular</p>
+              <h3>
+                You can now try the macOS Big Sur public beta
+              </h3>
+              <p class="gray-text">
+                Napier Lopez . 13 hours ago
+              </p>
+            </div>
+            <div class="card-3-bottom flex space-between">
+              <div class="flex flex-column">
+                <p class="uppercase">Latest</p>
+
+                <h4>
+                  Twitter begins labeling state-affiliated media and government
+                  officials
+                </h4>
+              </div>
+
+              <img
+                class="card-3-image"
+                src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/08/Snag_7d832a.png"
+                alt="logo"
+              />
+            </div>
+            <div>
+              <ul>
+                <li>
+                  <a href="#">
+                    Google adds Smart Compose to Docs, Sheets, and Slides on
+                    Android and iOS
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Facebook launches Instagram Reels globally amidst TikTok
+                    drama
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Google has lost sight of what made Chrome a good browser
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    How to delete your TikTok account
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Google Play Music will officially abdicate to YouTube Music
+                    by December
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card-3">
+            <h2>
+              <a href="#">
+                Gear
+                <i class="fas fa-chevron-right fa-xs" aria-hidden="true"></i>
+              </a>
+            </h2>
+            <div class="card-3-content-3 flex flex-column flex-end">
+              <p class="uppercase">most popular</p>
+              <h3>
+                Sony's WH-1000XM4 makes an almost flawless headphone even better
+              </h3>
+              <p class="gray-text">Napier Lopez . 14 hours ago</p>
+            </div>
+            <div class="card-3-bottom flex space-between">
+              <div class="flex flex-column">
+                <p class="uppercase">Latest</p>
+
+                <h4>
+                  Leak: Google could be working on a foldable Pixel phone for
+                  2021
+                </h4>
+              </div>
+
+              <img
+                class="card-3-image"
+                src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/08/Snag_e6a682.png"
+                alt="logo"
+              />
+            </div>
+            <div>
+              <ul>
+                <li>
+                  <a href="#">
+                    Sony's WH-1000XM4 makes an almost flawless headphone even
+                    better
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Just putting it out there: Wireless charging is for chumps —
+                    and the data proves it
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Google discontinues the Pixel 4 and 4XL — and that's a good
+                    thing
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Windows Insiders can now run Android apps on PCs with 'Your
+                    Phone' update
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Samsung's Galaxy Z Fold 2 tackles the original's biggest
+                    problems
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card-3">
+            <h2>
+              <a href="#">
+                Tech
+                <i class="fas fa-chevron-right fa-xs" aria-hidden="true"></i>
+              </a>
+            </h2>
+            <div class="card-3-content-4 flex flex-column flex-end">
+              <p class="uppercase">most popular</p>
+              <h3>
+                Why 'human-like' is a low bar for most AI projects
+              </h3>
+              <p class="gray-text card-3-effect">
+                Tristan Greene . 9 hours ago
+              </p>
+            </div>
+            <div class="card-3-bottom flex space-between">
+              <div class="flex flex-column">
+                <p class="uppercase">Latest</p>
+
+                <h4>
+                  Why Elon Musk is wrong about Level 5 self-driving cars
+                </h4>
+              </div>
+
+              <img
+                class="card-3-image"
+                src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/08/1-3.jpg"
+                alt="logo"
+              />
+            </div>
+            <div>
+              <ul>
+                <li>
+                  <a href="#">
+                    Moving Tiktok’s ownership to Microsoft will benefit tech
+                    giants — not users
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Watch this EV charge from Zero to 100% in 3 minutes using a
+                    battery swap
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Hey software developers, you’re approaching machine learning
+                    the wrong way
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    A closer look at Ohio’s self-driving shuttle bus trial
+                    that’s now a food delivery service
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    AI models need to be 'interpretable' rather than just
+                    'explainable'
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card-3">
+            <h2>
+              <a href="#">
+                Creative
+                <i class="fas fa-chevron-right fa-xs" aria-hidden="true"></i>
+              </a>
+            </h2>
+            <div class="card-3-content-5 flex flex-column flex-end">
+              <p class="uppercase">most popular</p>
+              <h3>
+                Why you need Design Thinking and Proofs of Concept to level up
+                your business
+              </h3>
+              <p class="gray-text">Andrea Hak . 8 days ago</p>
+            </div>
+            <div class="card-3-bottom flex space-between">
+              <div class="flex flex-column">
+                <p class="uppercase">Latest</p>
+
+                <h4>
+                  How an AI graphic designer convinced clients it was human
+                </h4>
+              </div>
+
+              <img
+                class="card-3-image"
+                src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/Untitled-design-2020-07-16T172150.239.png"
+                alt="logo"
+              />
+            </div>
+            <div>
+              <ul>
+                <li>
+                  <a href="#">
+                    This illustrator celebrates analog photography by drawing
+                    classic film cameras
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Amazon is making a Fallout TV show with Westworld's creators
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    There’s an actual science to good Instagram photos
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    This CSS library makes it easy to design Windows XP-inspired
+                    UIs
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    This AI wrote such emo lyrics that humans thought it was My
+                    Chemical Romance
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card-3">
+            <h2>
+              <a href="#">
+                Podium
+                <i class="fas fa-chevron-right fa-xs" aria-hidden="true"></i>
+              </a>
+            </h2>
+            <div class="card-3-content-6 flex flex-column flex-end">
+              <p class="uppercase">most popular</p>
+              <h3>
+                Tech in Latin America: An entrepreneur’s guide to June’s startup
+                news
+              </h3>
+              <p class="gray-text">Conrad Egusa . 21 days ago</p>
+            </div>
+            <div class="card-3-bottom flex space-between">
+              <div class="flex flex-column">
+                <p class="uppercase">Latest</p>
+
+                <h4>
+                  4 ways to improve your latest product’s landing page to
+                  guarantee conversion
+                </h4>
+              </div>
+
+              <img
+                class="card-3-image"
+                src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/Featured-Image-The-Next-Web.jpg"
+                alt="logo"
+              />
+            </div>
+            <div>
+              <ul>
+                <li>
+                  <a href="#">
+                    Why our laws can't protect me from my digital stalker
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Tech in Latin America: An entrepreneur’s guide to May’s
+                    startup news
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Coming out trans in tech: An entrepreneur's experience
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    An entrepreneur’s guide to COVID-19 tech news in May
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Why Gary Vaynerchuk's 12 hour TikTok telethon revealed a
+                    gentler side
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card-3">
+            <h2>
+              <a href="#">
+                Insights
+                <i class="fas fa-chevron-right fa-xs" aria-hidden="true"></i>
+              </a>
+            </h2>
+            <div class="card-3-content-7 flex flex-column flex-end">
+              <p class="uppercase">most popular</p>
+              <h3>
+                Bezos just took his first post-COVID (stock) dump — and it’s
+                worth $3.1B
+              </h3>
+              <p class="gray-text">David Canellis . 20 hours ago</p>
+            </div>
+            <div class="card-3-bottom flex space-between">
+              <div class="flex flex-column">
+                <p class="uppercase">Latest</p>
+
+                <h4>
+                  Why my startup is rejecting the 'new normal'
+                </h4>
+              </div>
+
+              <img
+                class="card-3-image"
+                src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/no-reject-stop-gq.png"
+                alt="logo"
+              />
+            </div>
+            <div>
+              <ul>
+                <li>
+                  <a href="#">
+                    Tell me, how confident are you about your product?
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Bezos just took his first post-COVID (stock) dump — and it’s
+                    worth $3.1B
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Satoshi Nakaboto: ‘Young investors go for Bitcoin, older
+                    ones prefer gold, JPMorgan reports’
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    5 things my first startup job taught me about customer
+                    service
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Uber buys UK software firm, expands reach from 40 locations
+                    to up to 170
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card-3">
+            <h2>
+              <a href="#">
+                Launch
+                <i class="fas fa-chevron-right fa-xs" aria-hidden="true"></i>
+              </a>
+            </h2>
+            <div class="card-3-content-8 flex flex-column flex-end">
+              <p class="uppercase">most popular</p>
+              <h3>
+                Say hello to SHIFT, our new publication about the future of
+                mobility tech
+              </h3>
+              <p class="gray-text">
+                Matthew Beedham . 3 days ago
+              </p>
+            </div>
+            <div class="card-3-bottom flex space-between">
+              <div class="flex flex-column">
+                <p class="uppercase">Latest</p>
+
+                <h4>
+                  How you can watch BMW unveil its hotly anticipated iX3 EV next
+                  week
+                </h4>
+              </div>
+
+              <img
+                class="card-3-image"
+                src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/BMW-ix3-unveiling-car-future-bavarian-motor-ev-electric.png"
+                alt="logo"
+              />
+            </div>
+            <div>
+              <ul>
+                <li>
+                  <a href="#">
+                    Facebook takes another stab at enabling 'free' mobile web
+                    access with its new Discover app
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Facebook-backed Reliance Jio pilots basic grocery ordering
+                    service on WhatsApp in India
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Google's coronavirus information site is now live
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    The hyper-compact Microlino 2.0 EV is almost too cute for
+                    words
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    TNW announces Neural: A blog for human-centric AI news and
+                    analysis
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card-3">
+            <h2>
+              <a href="#">
+                Distract
+                <i class="fas fa-chevron-right fa-xs" aria-hidden="true"></i>
+              </a>
+            </h2>
+            <div class="card-3-content-9 flex flex-column flex-end">
+              <p class="uppercase">most popular</p>
+              <h3>
+                Disney chooses to give Mulan a pricey release on Disney+
+              </h3>
+              <p class="gray-text">Rachel Kaser . 1 day ago</p>
+            </div>
+            <div class="card-3-bottom flex space-between">
+              <div class="flex flex-column">
+                <p class="uppercase">Latest</p>
+
+                <h4>
+                  Here's what makes the perfect 'cursed image'
+                </h4>
+              </div>
+
+              <img
+                class="card-3-image"
+                src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/cursed-image-article.png"
+                alt="logo"
+              />
+            </div>
+            <div>
+              <ul>
+                <li>
+                  <a href="#">
+                    Early impressions: Amplitude's Humankind looks like a bold
+                    step forward for the 4X genre
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    This AI generates hilariously realistic startup acquisition
+                    announcements
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Legend of Korra coming to Netflix after Avatar’s runaway
+                    success
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    This annoying Call of Duty: Warzone bug is absolutely
+                    killing me
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Ghost of Tsushima is samurai Assassin’s Creed — and not much
+                    else
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <section class="latest-deals">
+          <div class="flex space-between align-items-baseline">
+            <h2>
+              <a href="#"
+                >Latest deals
+                <i class="fas fa-chevron-right fa-xs" aria-hidden="true"></i>
+              </a>
+            </h2>
+
+            <p>See all deals</p>
+          </div>
+
+          <div class="grid latest-deals-container">
+            <article class="card-4">
+              <div class="card-4-discount-container">
+                <img
+                  src="https://cdnp2.stackassets.com/6179061a340aec6fb745648722689d80eb1f1165/store/f861de62ba66a53247f38806f00d41550a956e426fc22b7963aafc23c1b3/sale_28210_primary_image.jpg"
+                  alt="article image"
+                />
+
+                <div class="card-4-discount">
+                  <h4>93% off</h4>
+                </div>
+              </div>
+
+              <div class="card-4-mobile-text">
+                <h3>FREE: Leadership & Management Diploma 4-Week Course</h3>
+                <p><span class="strikethrough">$49</span>&nbsp; $0</p>
+              </div>
+            </article>
+
+            <article class="card-4">
+              <div class="card-4-discount-container">
+                <img
+                  src="https://cdnp2.stackassets.com/1b0bd98a9c257d0deba32330f074a986c0ac80ab/store/5244ce0f683265f98baeb686db693a0571c541750ca7a48220c02ced7df1/sale_32417_primary_image.jpg"
+                  alt="article image"
+                />
+                <div class="card-4-discount">
+                  <h4>97% off</h4>
+                </div>
+              </div>
+
+              <div class="card-4-mobile-text">
+                <h3>The Adobe XD Professional Certification Bundle</h3>
+                <p><span class="strikethrough">$99</span>&nbsp; $29.99</p>
+              </div>
+            </article>
+
+            <article class="card-4">
+              <div class="card-4-discount-container">
+                <img
+                  src="https://cdnp0.stackassets.com/0799bf00352de2d2111fa7580a4aeb4d5e36829c/store/831574f40ca85b498631ae2881f81d02cd9eedd411afd5c0c8f689969ad6/sale_19040_primary_image.jpg"
+                  alt="article image"
+                />
+                <div class="card-4-discount">
+                  <h4>96% off</h4>
+                </div>
+              </div>
+
+              <div class="card-4-mobile-text">
+                <h3>StackSkills Unlimited: Lifetime Access</h3>
+                <p><span class="strikethrough">$1495</span>&nbsp; $59</p>
+              </div>
+            </article>
+
+            <article class="card-4">
+              <div class="card-4-discount-container">
+                <img
+                  src="https://cdnp0.stackassets.com/32247da9a5b3bbc8dbae1cd6b539eee41a174c44/store/a6921f781563eb46ab4e7e9ad1edc4c7cd473f60de6504f05e70f98c56f7/sale_32423_primary_image.jpg"
+                  alt="article image"
+                />
+                <div class="card-4-discount">
+                  <h4>97% off</h4>
+                </div>
+              </div>
+
+              <div class="card-4-mobile-text">
+                <h3>The SEO & Social Media Ads Certification Bundle</h3>
+                <p><span class="strikethrough">$1994</span>&nbsp; $29.99</p>
+              </div>
+            </article>
+
+            <article class="card-4">
+              <div class="card-4-discount-container">
+                <img
+                  src="https://cdnp0.stackassets.com/2524c83054eaeeb1d74498c073e4db0134ed7dd1/store/c0c38b6f9d1ac8b5161d84509851f3bf72c0a2e7752f58f971373034be11/sale_32414_primary_image.jpg"
+                  alt="card-4-discount-container"
+                />
+                <div class="card-4-discount">
+                  <h4>90% off</h4>
+                </div>
+              </div>
+
+              <div class="card-4-mobile-text">
+                <h3>Speechify Audio Reader: 1-Year Subscription</h3>
+                <p><span class="strikethrough">$390</span>&nbsp; $39.99</p>
+              </div>
+            </article>
+
+            <article class="card-4">
+              <div class="card-4-discount-container">
+                <img
+                  src="https://cdnp3.stackassets.com/ff35439fd6a5c9e2c5cc4514a7f1923c9ef7ea6f/store/1532b43da15553514d7d8c0215fdd0d1033614864b7071dab71a69d5335b/sale_19163_primary_image.jpg"
+                  alt="card-4-discount-image"
+                />
+                <div class="card-4-discount">
+                  <h4>95% off</h4>
+                </div>
+              </div>
+
+              <div class="card-4-mobile-text">
+                <h3>VPN by VeePN: Lifetime Subscription</h3>
+                <p><span class="strikethrough">$659</span>&nbsp; $29.99</p>
+              </div>
+            </article>
+
+            <article class="card-4">
+              <div class="card-4-discount-container">
+                <img
+                  src="https://cdnp0.stackassets.com/91ebda2ae7f7974438ca02ec8a157fff3627de20/store/5cf3c232bdbc24350c1ff2f520ff9380e27bfd1b7e6b1af9cba9b47432f3/sale_27421_primary_image.jpg"
+                  alt="card-4-discount-container"
+                />
+                <div class="card-4-discount">
+                  <h4>76% off</h4>
+                </div>
+              </div>
+
+              <div class="card-4-mobile-text">
+                <h3>
+                  The Social Distancing Lifetime Subscription Bundle Ft. Rosetta
+                  Stone
+                </h3>
+                <p><span class="strikethrough">$49</span>&nbsp; $0</p>
+              </div>
+            </article>
+
+            <article class="card-4">
+              <div class="card-4-discount-container">
+                <img
+                  src="https://cdnp0.stackassets.com/f4ba7fa188eef66836fc16f74325b66a9246a703/store/6c45f8ddec0c015ca3762104531f411c9b267c25a00b8811623335fc75f6/sale_25313_primary_image.jpg"
+                  alt="card-4-discount-container"
+                />
+                <div class="card-4-discount">
+                  <h4>98% off</h4>
+                </div>
+              </div>
+
+              <div class="card-4-mobile-text">
+                <h3>The 2020 Premium Learn To Code Certification Bundle</h3>
+                <p><span class="strikethrough">$2300</span>&nbsp; $39</p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-links">
+        <ul class="footer-links-social">
+          <li>
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="-7.5 992.5 16 16"
+                id="facebook--dark"
+                x="256"
+                y="256"
+              >
+                <path
+                  d="M8.5 993.5v14c0 .547-.453 1-1 1h-4v-6.219h2l.336-2.305H3.5v-1.812c0-.656.336-1.031 1-1.031H6v-2.078s-.672-.109-1.641-.109c-2.195 0-3.305 1.219-3.305 3.039v1.992h-2v2.305h2v6.219H-6.5c-.547 0-1-.453-1-1v-14c0-.547.453-1 1-1h14c.547-.001 1 .452 1 .999z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="-7.5 992.5 16 16"
+                id="twitter--dark"
+                x="1008"
+                y="1008"
+              >
+                <path
+                  d="M6.867 997.234v.43c0 4.336-3.297 9.336-9.328 9.336-1.852 0-3.594-.406-5.039-1.336.258.039.516.055.781.055 1.531 0 2.961-.664 4.07-1.555-1.422-.016-2.648-.984-3.055-2.281a3.227 3.227 0 0 0 1.484-.055 3.28 3.28 0 0 1-2.633-3.219v-.039c.445.242.945.391 1.484.406a3.266 3.266 0 0 1-1.469-2.719c0-.609.172-1.109.445-1.594 1.633 1.984 4.039 3.219 6.758 3.367a3.4 3.4 0 0 1-.07-.758 3.267 3.267 0 0 1 3.273-3.273c.945 0 1.797.406 2.414 1.031a6.571 6.571 0 0 0 2.07-.797 3.252 3.252 0 0 1-1.445 1.82 6.42 6.42 0 0 0 1.891-.523 6.587 6.587 0 0 1-1.631 1.704z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="-7.5 992.5 16 16"
+                id="youtube--dark"
+                x="1264"
+                y="1264"
+              >
+                <path
+                  d="M8.5 1000.5c0 5.664 0 5.664-8 5.664s-8 0-8-5.664 0-5.664 8-5.664 8 0 8 5.664zm-5 0l-5-3v6l5-3z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="-7.5 992.5 16 16"
+                id="instagram--dark"
+                x="400"
+                y="400"
+              >
+                <path
+                  d="M8.5 994.836v11.328a2.337 2.337 0 0 1-2.336 2.336H-5.164a2.337 2.337 0 0 1-2.336-2.336v-11.328a2.337 2.337 0 0 1 2.336-2.336H6.164a2.337 2.337 0 0 1 2.336 2.336zM6.836 999.5H5.062c.07.32.102.656.102 1 0 2.578-2.086 4.664-4.664 4.664s-4.664-2.086-4.664-4.664c0-.344.031-.68.102-1h-1.773v7c0 .188.148.336.336.336h12a.333.333 0 0 0 .336-.336v-7zm-9.336 1a3.001 3.001 0 0 0 6 0 3.001 3.001 0 0 0-6 0zm9.336-6a.333.333 0 0 0-.336-.336h-2a.333.333 0 0 0-.336.336v2c0 .188.148.336.336.336h2a.333.333 0 0 0 .336-.336v-2z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="-7.5 992.5 16 16"
+                id="pinterest--dark"
+                x="656"
+                y="656"
+              >
+                <path
+                  d="M6.688 997.759c0 3.609-2.001 6.297-4.946 6.297-1 0-1.93-.516-2.258-1.125 0 0-.523 2.109-.648 2.516-.391 1.445-1.555 2.891-1.649 3-.078.094-.203.055-.227-.038-.016-.188-.312-2.017.039-3.501.164-.742 1.164-5 1.164-5s-.273-.594-.273-1.461c0-1.376.773-2.376 1.757-2.376.836 0 1.243.617 1.243 1.376 0 .835-.539 2.094-.821 3.258-.219.984.5 1.781 1.469 1.781 1.742 0 2.906-2.242 2.906-4.891 0-2.024-1.352-3.524-3.813-3.524-2.796 0-4.539 2.079-4.539 4.391 0 .82.243 1.376.61 1.821.164.203.188.273.132.5-.039.18-.148.586-.188.733-.055.243-.242.321-.461.243-1.281-.539-1.875-1.945-1.875-3.516 0-2.609 2.188-5.743 6.555-5.743 3.526 0 5.823 2.54 5.823 5.259z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="-7.5 992.5 16 16"
+                id="rss--dark"
+                x="800"
+                y="800"
+              >
+                <circle cx="-5.5" cy="1006.5" r="2" />
+                <path
+                  d="M-7.5 995.5c7.2 0 13 5.8 13 13h3c0-8.8-7.2-16-16-16v3zm0 3v3c3.9 0 7 3.101 7 7h3c0-5.5-4.5-10-10-10z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="-7.5 992.5 16 16"
+                id="mail--dark"
+                x="560"
+                y="560"
+              >
+                <path
+                  d="M.5 1001.5l-8-6c0-.555.446-1 1-1h14c.554 0 1 .445 1 1l-8 6zm0 1.798l8-6.001v8.203c0 .555-.446 1-1 1h-14c-.554 0-1-.445-1-1v-8.203l8 6.001z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <ul class="footer-links-menu">
+          <li class="uppercase"><a href="#">events</a></li>
+          <li class="uppercase"><a href="#">about</a></li>
+          <li class="uppercase"><a href="#">advertise</a></li>
+          <li class="uppercase"><a href="#">jobs</a></li>
+          <li class="uppercase"><a href="#">contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-copyright flex-column-mobile">
+        <div class="flex align-items-center">
+          <img
+            class="footer-logo"
+            width="37"
+            height="9"
+            src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg"
+            alt="TNW footer logo"
+          />
+
+          <p>&nbsp; © 2006–2020 The Next Web B.V.</p>
+        </div>
+        <p>
+          &nbsp; Made with
+          <img src="assets/heart.svg" width="11" height="11" alt="heart logo" />
+          in Amsterdam. &nbsp;
+        </p>
+        <p class="flex align-items-center">
+          Powered by &nbsp;
+          <img
+            width="65"
+            height="9"
+            src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/stackpath.svg"
+            alt="Stackpath logo"
+          />
+
+          &nbsp;
+          <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img
+              class="jigsaw"
+              src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+              alt="Valid CSS!"
+            />
+          </a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
