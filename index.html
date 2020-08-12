@@ -62,7 +62,7 @@
           <li><a href="#">Spaces</a></li>
           <li><a href="#">Terms & Conditions</a></li>
         </ul>
-        <ul class="flex smaller align-items-center">
+        <ul class="flex smaller align-items-center about-nav">
           <li><a href="#">About</a></li>
           <li><a href="#">Advertise</a></li>
           <li><a href="#">Jobs</a></li>
@@ -75,7 +75,7 @@
             <a href="#">latest</a>
           </li>
           <li>
-            <a href="#">hard fork</a>
+            <a href="#hard-fork">hard fork</a>
           </li>
           <li>
             <a href="#">plugged</a>
@@ -644,7 +644,7 @@
         <div class="grid-container-2 grid">
           <article class="card-3">
             <h2>
-              <a href="#">
+              <a id="hard-fork" href="#">
                 Hard Fork
                 <i class="fas fa-chevron-right fa-xs" aria-hidden="true"></i>
               </a>
@@ -1525,31 +1525,36 @@
         </ul>
       </div>
 
-      <div class="footer-copyright">
-        <img
-          width="37"
-          height="37"
-          src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg"
-          alt="TNW footer logo"
-        />
-        <span> &nbsp; © 2006–2020 The Next Web B.V. </span>
-        <span>
+      <div class="footer-copyright flex-column-mobile">
+        <div class="flex align-items-center">
+          <img
+            class="footer-logo"
+            width="37"
+            height="9"
+            src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg"
+            alt="TNW footer logo"
+          />
+
+          <p>&nbsp; © 2006–2020 The Next Web B.V.</p>
+        </div>
+        <p>
           &nbsp; Made with
           <img src="assets/heart.svg" width="11" height="11" alt="heart logo" />
-          in Amsterdam. &nbsp;</span
-        >
-        <span>Powered by &nbsp; </span>
-        <img
-          width="65"
-          height="65"
-          src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/stackpath.svg"
-          alt="Stackpath logo"
-        />
-        <p>
+          in Amsterdam. &nbsp;
+        </p>
+        <p class="flex align-items-center">
+          Powered by &nbsp;
+          <img
+            width="65"
+            height="9"
+            src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/stackpath.svg"
+            alt="Stackpath logo"
+          />
+
           &nbsp;
           <a href="http://jigsaw.w3.org/css-validator/check/referer">
             <img
-              style="border: 0; width: 88px; height: 31px;"
+              class="jigsaw"
               src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
               alt="Valid CSS!"
             />

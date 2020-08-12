@@ -150,7 +150,7 @@ header a {
   background-color: #333;
   padding: 12px;
   border-radius: 50%;
-  margin: 10px;
+  margin: 8px;
   display: flex;
 }
 
@@ -410,7 +410,7 @@ header a {
 
 .main-image-3 {
   grid-area: main-image-3;
-  background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F08%2Fwireless-charging-sucks.jpg&signature=d996481867aa432d54bdda92fae09871"), linear-gradient(transparent, rgba(0, 0, 0) 90%);
+  background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F08%2Fwireless-charging-sucks.jpg&signature=d996481867aa432d54bdda92fae09871"), linear-gradient(transparent, rgba(0, 0, 0) 98%);
   background-blend-mode: overlay;
   background-position: center;
   background-repeat: no-repeat;
@@ -434,6 +434,15 @@ header a {
   letter-spacing: -0.42px;
   line-height: 32px;
   padding: 2px 0 5px;
+}
+
+.jigsaw {
+  border: 0;
+  width: 88px;
+  height: 31px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 /* Main section */
@@ -467,6 +476,12 @@ header a {
 
 .card-4-mobile-text p {
   color: #555;
+}
+
+.footer-copyright p {
+  color: #aaa;
+  font-size: 13px;
+  font-family: "ARS Maquette", sans-serif;
 }
 
 .card-3-bottom div p {
@@ -560,12 +575,6 @@ header a {
 
 .latest-funding {
   margin-top: 90px;
-}
-
-.footer-copyright span {
-  color: #aaa;
-  font-size: 13px;
-  font-family: "ARS Maquette", sans-serif;
 }
 
 .latest-funding .card-2-bottom span {
@@ -961,6 +970,8 @@ header a {
   width: 100%;
   height: 97px;
   color: white;
+  font-size: 13px;
+  position: relative;
 }
 
 .footer-copyright img {
@@ -992,7 +1003,12 @@ header a {
     padding-left: 95px;
   }
 
-  .desktop-date {
+  .about-nav {
+    visibility: hidden;
+  }
+
+  .desktop-date,
+  #desktop-white-logo {
     display: none;
   }
 
@@ -1452,6 +1468,14 @@ header a {
     font-size: 12px;
   }
 
+  .footer-links-social a {
+    background-color: #333;
+    padding: 12px;
+    border-radius: 50%;
+    margin: 8px 3px;
+    display: flex;
+  }
+
   .card-3 li a {
     font-size: 13px;
     font-family: "ARS Maquette", sans-serif;
@@ -1490,9 +1514,23 @@ header a {
 
   .footer-copyright {
     flex-wrap: wrap;
+    height: 122px;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .footer-top {
+    align-items: center;
   }
 
   .main-grid-container h2 {
     line-height: 23px;
+  }
+
+  .footer-links-social {
+    margin-top: -20px;
+    display: flex;
+    list-style: none;
+    justify-content: center;
   }
 }
